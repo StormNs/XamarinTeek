@@ -23,14 +23,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/edtUsername"
         android:hint="Username"
-        android:textColorHint="#000000" />
+        android:textColorHint="#000000"
+        android:textColor="@android:color/black" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtPassword"
         android:hint="Password"
-        android:textColorHint="#000000" />
+        android:textColorHint="#000000"
+        android:textColor="@android:color/black" />
     <Button
         android:text="Sign in"
         android:layout_marginTop="30dp"

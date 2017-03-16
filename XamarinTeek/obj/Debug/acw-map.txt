@@ -1,0 +1,4 @@
+XamarinTeek.MainActivity, XamarinTeek;md5abd02838c944af85eb82c03a7920f031.MainActivity
+XamarinTeek.MainActivity, XamarinTeek, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5abd02838c944af85eb82c03a7920f031.MainActivity
+XamarinTeek.MainActivity;md5abd02838c944af85eb82c03a7920f031.MainActivity
+xamarinteek.MainActivity;md5abd02838c944af85eb82c03a7920f031.MainActivity
