@@ -1605,6 +1605,10 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f020032;
         public static int icon=0x7f020033;
         public static int logo=0x7f020034;
+        public static int mail_icon=0x7f020035;
+        public static int password_icon=0x7f020036;
+        public static int phone_icon=0x7f020037;
+        public static int user_icon=0x7f020038;
     }
     public static final class id {
         public static int action_bar=0x7f080031;
@@ -1623,18 +1627,24 @@ containing a value of this type.
         public static int activity_chooser_view_content=0x7f080021;
         public static int always=0x7f080016;
         public static int beginning=0x7f080013;
-        public static int btnFBSignin=0x7f080043;
-        public static int btnSignin=0x7f080042;
+        public static int btnFBSignin=0x7f080046;
+        public static int btnSignin=0x7f080045;
+        public static int button1=0x7f08004b;
         public static int checkbox=0x7f080029;
         public static int collapseActionView=0x7f080017;
         public static int decor_content_parent=0x7f08002f;
         public static int default_activity_button=0x7f080024;
         public static int dialog=0x7f08001b;
         public static int disableHome=0x7f08000c;
+        public static int drawer_layout=0x7f080040;
         public static int dropdown=0x7f08001c;
+        public static int editText1=0x7f080047;
+        public static int editText2=0x7f080048;
+        public static int editText3=0x7f080049;
+        public static int editText4=0x7f08004a;
         public static int edit_query=0x7f080033;
-        public static int edtPassword=0x7f080041;
-        public static int edtUsername=0x7f080040;
+        public static int edtPassword=0x7f080044;
+        public static int edtUsername=0x7f080043;
         public static int end=0x7f080014;
         public static int expand_activities_button=0x7f080022;
         public static int expanded_menu=0x7f080028;
@@ -1643,10 +1653,12 @@ containing a value of this type.
         public static int icon=0x7f080026;
         public static int ifRoom=0x7f080018;
         public static int image=0x7f080023;
-        public static int imageView1=0x7f08003f;
+        public static int imageView1=0x7f080042;
+        public static int left_drawer=0x7f080041;
         public static int listMode=0x7f080009;
         public static int list_item=0x7f080025;
         public static int middle=0x7f080015;
+        public static int my_toolbar=0x7f08003f;
         public static int never=0x7f080019;
         public static int none=0x7f08000e;
         public static int normal=0x7f08000a;
@@ -1703,8 +1715,10 @@ containing a value of this type.
         public static int abc_search_dropdown_item_icons_2line=0x7f030014;
         public static int abc_search_view=0x7f030015;
         public static int abc_simple_dropdown_hint=0x7f030016;
-        public static int main=0x7f030017;
-        public static int support_simple_spinner_dropdown_item=0x7f030018;
+        public static int brandoption=0x7f030017;
+        public static int main=0x7f030018;
+        public static int register=0x7f030019;
+        public static int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class string {
         public static int ApplicationName=0x7f0a0011;
@@ -1725,6 +1739,8 @@ containing a value of this type.
         public static int abc_shareactionprovider_share_with=0x7f0a000d;
         public static int abc_shareactionprovider_share_with_application=0x7f0a000e;
         public static int abc_toolbar_collapse_description=0x7f0a000f;
+        public static int closeDrawer=0x7f0a0013;
+        public static int openDrawer=0x7f0a0012;
     }
     public static final class style {
         public static int Base_TextAppearance_AppCompat=0x7f0b0000;
@@ -1836,6 +1852,10 @@ containing a value of this type.
         public static int Base_Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b005e;
         public static int Base_Widget_AppCompat_Toolbar=0x7f0b005f;
         public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0060;
+        /** Animation from Hamburger icon to arrow icon
+         */
+        public static int MyDrawerArrowStyle=0x7f0b00ec;
+        public static int MyTheme=0x7f0b00eb;
         public static int Platform_AppCompat=0x7f0b0061;
         public static int Platform_AppCompat_Dialog=0x7f0b0062;
         public static int Platform_AppCompat_Light=0x7f0b0063;

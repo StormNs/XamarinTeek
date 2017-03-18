@@ -5,18 +5,19 @@ using System;
 using Android.Content;
 using Android.Views;
 
+
 namespace XamarinTeek
 {
     [Activity(Label = "XamarinTeek", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        
+       
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-<<<<<<< HEAD
+
             SetContentView(Resource.Layout.Main);
             Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignin);
             btnSignIn.Click += delegate
@@ -24,9 +25,8 @@ namespace XamarinTeek
                 StartActivity(typeof(BrandOptionActivity));
             };
            
-=======
-            SetContentView (Resource.Layout.Register);
->>>>>>> origin/BloodSouls-DEV
+
+
         }
 
        

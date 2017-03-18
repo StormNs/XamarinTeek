@@ -9,26 +9,22 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-      
-        <RelativeLayout
+        <ListView
+            android:minWidth="25dp"
+            android:minHeight="25dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Support V7 action bar"
-                android:layout_centerInParent="true" />
-        </RelativeLayout>
-      <!--Left -->
+            android:layout_height="match_parent"
+            android:id="@+id/brandListView" />
+    <!--Left -->
         <ListView
             android:id="@+id/left_drawer"
             android:layout_width="240dp"
@@ -37,7 +33,6 @@
             android:choiceMode="singleChoice"
             android:divider="#818181"
             android:dividerHeight="1dp"
-            android:background="#E3F2FD"/>
+            android:background="#E3F2FD" />
     </android.support.v4.widget.DrawerLayout>
-
 </LinearLayout>

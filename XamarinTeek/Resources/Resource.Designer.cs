@@ -1174,14 +1174,23 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f080013
 			public const int beginning = 2131230739;
 			
-			// aapt resource value: 0x7f080046
-			public const int btnFBSignin = 2131230790;
+			// aapt resource value: 0x7f080043
+			public const int brandImage = 2131230787;
 			
-			// aapt resource value: 0x7f080045
-			public const int btnSignin = 2131230789;
+			// aapt resource value: 0x7f080041
+			public const int brandListView = 2131230785;
 			
-			// aapt resource value: 0x7f08004b
-			public const int button1 = 2131230795;
+			// aapt resource value: 0x7f080044
+			public const int brandName = 2131230788;
+			
+			// aapt resource value: 0x7f08004a
+			public const int btnFBSignin = 2131230794;
+			
+			// aapt resource value: 0x7f080049
+			public const int btnSignin = 2131230793;
+			
+			// aapt resource value: 0x7f08004f
+			public const int button1 = 2131230799;
 			
 			// aapt resource value: 0x7f080029
 			public const int checkbox = 2131230761;
@@ -1207,26 +1216,26 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f08001c
 			public const int dropdown = 2131230748;
 			
-			// aapt resource value: 0x7f080047
-			public const int editText1 = 2131230791;
+			// aapt resource value: 0x7f08004b
+			public const int editText1 = 2131230795;
 			
-			// aapt resource value: 0x7f080048
-			public const int editText2 = 2131230792;
+			// aapt resource value: 0x7f08004c
+			public const int editText2 = 2131230796;
 			
-			// aapt resource value: 0x7f080049
-			public const int editText3 = 2131230793;
+			// aapt resource value: 0x7f08004d
+			public const int editText3 = 2131230797;
 			
-			// aapt resource value: 0x7f08004a
-			public const int editText4 = 2131230794;
+			// aapt resource value: 0x7f08004e
+			public const int editText4 = 2131230798;
 			
 			// aapt resource value: 0x7f080033
 			public const int edit_query = 2131230771;
 			
-			// aapt resource value: 0x7f080044
-			public const int edtPassword = 2131230788;
+			// aapt resource value: 0x7f080048
+			public const int edtPassword = 2131230792;
 			
-			// aapt resource value: 0x7f080043
-			public const int edtUsername = 2131230787;
+			// aapt resource value: 0x7f080047
+			public const int edtUsername = 2131230791;
 			
 			// aapt resource value: 0x7f080014
 			public const int end = 2131230740;
@@ -1252,11 +1261,11 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f080023
 			public const int image = 2131230755;
 			
-			// aapt resource value: 0x7f080042
-			public const int imageView1 = 2131230786;
+			// aapt resource value: 0x7f080046
+			public const int imageView1 = 2131230790;
 			
-			// aapt resource value: 0x7f080041
-			public const int left_drawer = 2131230785;
+			// aapt resource value: 0x7f080042
+			public const int left_drawer = 2131230786;
 			
 			// aapt resource value: 0x7f080009
 			public const int listMode = 2131230729;
@@ -1287,6 +1296,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f08002b
 			public const int radio = 2131230763;
+			
+			// aapt resource value: 0x7f080045
+			public const int ratingBar1 = 2131230789;
 			
 			// aapt resource value: 0x7f080035
 			public const int search_badge = 2131230773;
@@ -1456,13 +1468,16 @@ namespace XamarinTeek
 			public const int BrandOption = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int Main = 2130903064;
+			public const int BrandRowView = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int Register = 2130903065;
+			public const int Main = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int support_simple_spinner_dropdown_item = 2130903066;
+			public const int Register = 2130903066;
+			
+			// aapt resource value: 0x7f03001b
+			public const int support_simple_spinner_dropdown_item = 2130903067;
 			
 			static Layout()
 			{
@@ -1530,6 +1545,12 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f0a000f
 			public const int abc_toolbar_collapse_description = 2131361807;
+			
+			// aapt resource value: 0x7f0a0013
+			public const int closeDrawer = 2131361811;
+			
+			// aapt resource value: 0x7f0a0012
+			public const int openDrawer = 2131361810;
 			
 			static String()
 			{
@@ -1870,6 +1891,12 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f0b0060
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131427424;
+			
+			// aapt resource value: 0x7f0b00ec
+			public const int MyDrawerArrowStyle = 2131427564;
+			
+			// aapt resource value: 0x7f0b00eb
+			public const int MyTheme = 2131427563;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int Platform_AppCompat = 2131427425;

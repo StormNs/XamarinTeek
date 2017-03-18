@@ -1627,9 +1627,12 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
-        public static final int btnFBSignin=0x7f080046;
-        public static final int btnSignin=0x7f080045;
-        public static final int button1=0x7f08004b;
+        public static final int brandImage=0x7f080043;
+        public static final int brandListView=0x7f080041;
+        public static final int brandName=0x7f080044;
+        public static final int btnFBSignin=0x7f08004a;
+        public static final int btnSignin=0x7f080049;
+        public static final int button1=0x7f08004f;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
@@ -1638,13 +1641,13 @@ containing a value of this type.
         public static final int disableHome=0x7f08000c;
         public static final int drawer_layout=0x7f080040;
         public static final int dropdown=0x7f08001c;
-        public static final int editText1=0x7f080047;
-        public static final int editText2=0x7f080048;
-        public static final int editText3=0x7f080049;
-        public static final int editText4=0x7f08004a;
+        public static final int editText1=0x7f08004b;
+        public static final int editText2=0x7f08004c;
+        public static final int editText3=0x7f08004d;
+        public static final int editText4=0x7f08004e;
         public static final int edit_query=0x7f080033;
-        public static final int edtPassword=0x7f080044;
-        public static final int edtUsername=0x7f080043;
+        public static final int edtPassword=0x7f080048;
+        public static final int edtUsername=0x7f080047;
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
@@ -1653,8 +1656,8 @@ containing a value of this type.
         public static final int icon=0x7f080026;
         public static final int ifRoom=0x7f080018;
         public static final int image=0x7f080023;
-        public static final int imageView1=0x7f080042;
-        public static final int left_drawer=0x7f080041;
+        public static final int imageView1=0x7f080046;
+        public static final int left_drawer=0x7f080042;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int middle=0x7f080015;
@@ -1665,6 +1668,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
+        public static final int ratingBar1=0x7f080045;
         public static final int search_badge=0x7f080035;
         public static final int search_bar=0x7f080034;
         public static final int search_button=0x7f080036;
@@ -1716,9 +1720,10 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int brandoption=0x7f030017;
-        public static final int main=0x7f030018;
-        public static final int register=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int brandrowview=0x7f030018;
+        public static final int main=0x7f030019;
+        public static final int register=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class string {
         public static final int ApplicationName=0x7f0a0011;
@@ -1739,6 +1744,8 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0a000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000e;
         public static final int abc_toolbar_collapse_description=0x7f0a000f;
+        public static final int closeDrawer=0x7f0a0013;
+        public static final int openDrawer=0x7f0a0012;
     }
     public static final class style {
         public static final int Base_TextAppearance_AppCompat=0x7f0b0000;
@@ -1850,6 +1857,10 @@ containing a value of this type.
         public static final int Base_Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b005e;
         public static final int Base_Widget_AppCompat_Toolbar=0x7f0b005f;
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0060;
+        /** Animation from Hamburger icon to arrow icon
+         */
+        public static final int MyDrawerArrowStyle=0x7f0b00ec;
+        public static final int MyTheme=0x7f0b00eb;
         public static final int Platform_AppCompat=0x7f0b0061;
         public static final int Platform_AppCompat_Dialog=0x7f0b0062;
         public static final int Platform_AppCompat_Light=0x7f0b0063;
