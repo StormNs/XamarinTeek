@@ -1552,6 +1552,7 @@ containing a value of this type.
         public static final int disabled_alpha_material_light=0x7f07002a;
     }
     public static final class drawable {
+<<<<<<< HEAD
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
         public static final int abc_ab_share_pack_holo_light=0x7f020001;
         public static final int abc_btn_check_material=0x7f020002;
@@ -1709,6 +1710,30 @@ containing a value of this type.
         public static final int brandoption=0x7f030017;
         public static final int main=0x7f030018;
         public static final int support_simple_spinner_dropdown_item=0x7f030019;
+=======
+        public static final int icon=0x7f020000;
+        public static final int logo=0x7f020001;
+        public static final int mail_icon=0x7f020002;
+        public static final int password_icon=0x7f020003;
+        public static final int phone_icon=0x7f020004;
+        public static final int user_icon=0x7f020005;
+    }
+    public static final class id {
+        public static final int btnFBSignin=0x7f050004;
+        public static final int btnSignin=0x7f050003;
+        public static final int button1=0x7f050009;
+        public static final int editText1=0x7f050005;
+        public static final int editText2=0x7f050006;
+        public static final int editText3=0x7f050007;
+        public static final int editText4=0x7f050008;
+        public static final int edtPassword=0x7f050002;
+        public static final int edtUsername=0x7f050001;
+        public static final int imageView1=0x7f050000;
+    }
+    public static final class layout {
+        public static final int main=0x7f030000;
+        public static final int register=0x7f030001;
+>>>>>>> origin/BloodSouls-DEV
     }
     public static final class string {
         public static final int ApplicationName=0x7f0a0011;

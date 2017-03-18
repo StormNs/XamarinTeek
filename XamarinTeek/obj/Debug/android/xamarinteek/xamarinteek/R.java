@@ -1605,6 +1605,10 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int icon=0x7f020033;
         public static final int logo=0x7f020034;
+        public static final int mail_icon=0x7f020035;
+        public static final int password_icon=0x7f020036;
+        public static final int phone_icon=0x7f020037;
+        public static final int user_icon=0x7f020038;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1625,6 +1629,7 @@ containing a value of this type.
         public static final int beginning=0x7f080013;
         public static final int btnFBSignin=0x7f080046;
         public static final int btnSignin=0x7f080045;
+        public static final int button1=0x7f08004b;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
@@ -1633,6 +1638,10 @@ containing a value of this type.
         public static final int disableHome=0x7f08000c;
         public static final int drawer_layout=0x7f080040;
         public static final int dropdown=0x7f08001c;
+        public static final int editText1=0x7f080047;
+        public static final int editText2=0x7f080048;
+        public static final int editText3=0x7f080049;
+        public static final int editText4=0x7f08004a;
         public static final int edit_query=0x7f080033;
         public static final int edtPassword=0x7f080044;
         public static final int edtUsername=0x7f080043;
@@ -1708,7 +1717,8 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int brandoption=0x7f030017;
         public static final int main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int register=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class string {
         public static final int ApplicationName=0x7f0a0011;

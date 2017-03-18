@@ -1101,6 +1101,18 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f020034
 			public const int logo = 2130837556;
 			
+			// aapt resource value: 0x7f020035
+			public const int mail_icon = 2130837557;
+			
+			// aapt resource value: 0x7f020036
+			public const int password_icon = 2130837558;
+			
+			// aapt resource value: 0x7f020037
+			public const int phone_icon = 2130837559;
+			
+			// aapt resource value: 0x7f020038
+			public const int user_icon = 2130837560;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -1168,6 +1180,9 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f080045
 			public const int btnSignin = 2131230789;
 			
+			// aapt resource value: 0x7f08004b
+			public const int button1 = 2131230795;
+			
 			// aapt resource value: 0x7f080029
 			public const int checkbox = 2131230761;
 			
@@ -1191,6 +1206,18 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f08001c
 			public const int dropdown = 2131230748;
+			
+			// aapt resource value: 0x7f080047
+			public const int editText1 = 2131230791;
+			
+			// aapt resource value: 0x7f080048
+			public const int editText2 = 2131230792;
+			
+			// aapt resource value: 0x7f080049
+			public const int editText3 = 2131230793;
+			
+			// aapt resource value: 0x7f08004a
+			public const int editText4 = 2131230794;
 			
 			// aapt resource value: 0x7f080033
 			public const int edit_query = 2131230771;
@@ -1432,7 +1459,10 @@ namespace XamarinTeek
 			public const int Main = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int support_simple_spinner_dropdown_item = 2130903065;
+			public const int Register = 2130903065;
+			
+			// aapt resource value: 0x7f03001a
+			public const int support_simple_spinner_dropdown_item = 2130903066;
 			
 			static Layout()
 			{

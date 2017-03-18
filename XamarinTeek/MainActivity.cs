@@ -16,6 +16,7 @@ namespace XamarinTeek
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
+<<<<<<< HEAD
             SetContentView(Resource.Layout.Main);
             Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignin);
             btnSignIn.Click += delegate
@@ -23,6 +24,9 @@ namespace XamarinTeek
                 StartActivity(typeof(BrandOptionActivity));
             };
            
+=======
+            SetContentView (Resource.Layout.Register);
+>>>>>>> origin/BloodSouls-DEV
         }
 
        
