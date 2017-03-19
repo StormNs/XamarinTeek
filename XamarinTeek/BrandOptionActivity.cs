@@ -13,81 +13,114 @@ using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V7.App;
 using Android.Support.V4.Widget;
 using Android.Content.Res;
+using Android.Support.Design.Widget;
 
 namespace XamarinTeek
 {
     [Activity(Label = "BrandOptionActivity", Theme ="@style/MyTheme")]
-    public class BrandOptionActivity : ActionBarActivity
+    public class BrandOptionActivity : BaseActivity
     {
-        private ActionBarDrawerToggle mDrawerToggle;
-        private DrawerLayout mDrawerLayout;
-        private ListView mLeftDrawer;
-       
-        
+        DrawerLayout drawerLayout;
+        NavigationView navigationView;
 
-        private ListView brandListView;
-        private List<Brand> allBrand;
+        protected override int LayoutResource
+        {
+            get
+            {
+                return Resource.Layout.BrandOption;
+            }
+        }
 
+
+      
+
+        IMenuItem previousItem;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.BrandOption);
+            //SetContentView(Resource.Layout.BrandOption);
 
-            brandListView = FindViewById<ListView>(Resource.Id.brandListView);
+           
 
-            //new data service and get all brand here..
-            Brand b1 = new Brand("Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
-            allBrand = new List<Brand>();
-            allBrand.Add(b1);
-            //put list in view
-            brandListView.Adapter = new BrandListAdapter(this, allBrand);
+            drawerLayout = this.FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
-            //fast scroll if has long list data
-            brandListView.FastScrollEnabled = true;
+            ////Set hamburger items menu
+            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
 
-            //Create side menu bar
-            SupportToolbar mToolbar = (SupportToolbar) FindViewById(Resource.Id.my_toolbar);
-            mToolbar.Title= "Brands";
-            mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
+            //setup navigation view
+            navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
 
-            SetSupportActionBar(mToolbar);
+            //handle navigation
+            navigationView.NavigationItemSelected += (sender, e) =>
+            {
+                if (previousItem != null)
+                    previousItem.SetChecked(false);
 
-            //add item for menu
+                navigationView.SetCheckedItem(e.MenuItem.ItemId);
+
+                previousItem = e.MenuItem;
+
+                switch (e.MenuItem.ItemId)
+                {
+                    case Resource.Id.nav_brand:
+                        ListItemClicked(0);
+                        break;
+                   
+                }
 
 
-            //mLeftDrawer.Adapter = mLeftAdapter;
+                drawerLayout.CloseDrawers();
+            };
 
-            mDrawerToggle = new ActionBarDrawerToggle(
-                this,
-                mDrawerLayout,
-                Resource.String.openDrawer,
-                Resource.String.closeDrawer);
 
-            mDrawerLayout.SetDrawerListener(mDrawerToggle);
-            SupportActionBar.SetHomeButtonEnabled(true);
-            //SupportActionBar.SetDisplayShowTitleEnabled(true);
-            mDrawerToggle.SyncState();
+            //if first time you will want to go ahead and click first item.
+            //if (savedInstanceState == null)
+            //{
+            //    navigationView.SetCheckedItem(Resource.Id.nav_brand);
+            //    ListItemClicked(0);
+            //}
+
+
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
+        int oldPosition = -1;
+        private void ListItemClicked(int position)
         {
-            MenuInflater.Inflate(Resource.Menu.nav_menu, menu);
-            return base.OnCreateOptionsMenu(menu);
+            //this way we don't load twice, but you might want to modify this a bit.
+            if (position == oldPosition)
+                return;
+
+            oldPosition = position;
+
+            Android.Support.V4.App.Fragment fragment = null;
+            switch (position)
+            {
+                case 0:
+                    fragment = BrandOptionsFragment.NewInstance();
+                    break;
+                //case 1:
+                //    fragment = Fragment2.NewInstance();
+                //    break;
+            }
+
+            SupportFragmentManager.BeginTransaction()
+                .Replace(Resource.Id.content_frame, fragment)
+                .Commit();
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            mDrawerToggle.OnOptionsItemSelected(item);
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);
+                    return true;
+            }
             return base.OnOptionsItemSelected(item);
         }
 
-        public override void OnConfigurationChanged(Configuration newConfig)
-        {
-            base.OnConfigurationChanged(newConfig);
-            mDrawerToggle.OnConfigurationChanged(newConfig);
-        }
+
     }
 }
