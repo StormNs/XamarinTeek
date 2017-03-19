@@ -95,5 +95,6 @@ D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\Syste
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\XamarinTeek.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\res\layout\event.xml
+D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\res\layout\joinevent.xml
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\XamarinTeek.dll.mdb

@@ -22,6 +22,10 @@ XamarinTeek.RegisterActivity, XamarinTeek;md5abd02838c944af85eb82c03a7920f031.Re
 XamarinTeek.RegisterActivity, XamarinTeek, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5abd02838c944af85eb82c03a7920f031.RegisterActivity
 XamarinTeek.RegisterActivity;md5abd02838c944af85eb82c03a7920f031.RegisterActivity
 xamarinteek.RegisterActivity;md5abd02838c944af85eb82c03a7920f031.RegisterActivity
+XamarinTeek.Resources.JoinEventDialog, XamarinTeek;md5c6090e2c7082b62aa3c5bc44af908a6c.JoinEventDialog
+XamarinTeek.Resources.JoinEventDialog, XamarinTeek, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c6090e2c7082b62aa3c5bc44af908a6c.JoinEventDialog
+XamarinTeek.Resources.JoinEventDialog;md5c6090e2c7082b62aa3c5bc44af908a6c.JoinEventDialog
+xamarinteek.resources.JoinEventDialog;md5c6090e2c7082b62aa3c5bc44af908a6c.JoinEventDialog
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager+IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor

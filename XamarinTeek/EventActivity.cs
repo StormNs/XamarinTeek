@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using XamarinTeek.Resources;
 
 namespace XamarinTeek
 {
@@ -40,6 +41,14 @@ namespace XamarinTeek
 
             TextView txtPoint = FindViewById<TextView>(Resource.Id.txtPoint);
             txtPoint.Text = "Need " + eventPoint + (eventPoint > 1 ? " point" : " points") + " to join";
+
+            Button btnJoin = FindViewById<Button>(Resource.Id.btnJoin);
+            btnJoin.Click += delegate
+            {
+                FragmentTransaction trans = FragmentManager.BeginTransaction();
+                JoinEventDialog dialog = new JoinEventDialog();
+                dialog.Show(trans, "JoinDialog");
+            };
         }
     }
 }

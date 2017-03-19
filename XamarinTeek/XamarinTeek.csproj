@@ -65,6 +65,7 @@
     <Compile Include="EventActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
+    <Compile Include="Resources\JoinEventDialog.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,6 +82,9 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\BrandRowView.axml" />
     <AndroidResource Include="Resources\layout\Event.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JoinEvent.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
