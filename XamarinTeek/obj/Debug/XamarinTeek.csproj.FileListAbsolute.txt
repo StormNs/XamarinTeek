@@ -52,6 +52,7 @@ D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\XamarinTeek.XamarinT
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\XamarinTeek.XamarinTeek-Signed.apk
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\Xamarin.Android.Support.v4.dll
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.csprojResolveAssemblyReference.cache
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.dll
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.pdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\bin\XamarinTeek.XamarinTeek.apk
@@ -70,7 +71,6 @@ D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\res\values\styles.xm
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\R.cs.flag
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\uploadflags.txt
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\XamarinTeek.dll.mdb
-D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.csprojResolveAssemblyReference.cache
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\Java.Interop.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\Mono.Android.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\mscorlib.dll.mdb
@@ -94,5 +94,6 @@ D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\Syste
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\android\assets\XamarinTeek.dll.mdb
+D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\res\layout\event.xml
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\obj\Debug\XamarinTeek.dll.mdb
 D:\FPT\Xamarin_SourceTree\XamarinTeek\XamarinTeek\bin\Debug\XamarinTeek.dll.mdb

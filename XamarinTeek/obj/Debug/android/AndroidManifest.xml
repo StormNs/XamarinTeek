@@ -5,6 +5,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="XamarinTeek" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="BrandOptionActivity" android:theme="@style/MyTheme" android:name="md5abd02838c944af85eb82c03a7920f031.BrandOptionActivity" />
+    <activity android:label="EventActivity" android:name="md5abd02838c944af85eb82c03a7920f031.EventActivity" />
     <activity android:icon="@drawable/icon" android:label="XamarinTeek" android:name="md5abd02838c944af85eb82c03a7920f031.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
