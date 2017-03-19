@@ -1603,12 +1603,18 @@ containing a value of this type.
         public static int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static int abc_textfield_search_material=0x7f020032;
-        public static int icon=0x7f020033;
-        public static int logo=0x7f020034;
-        public static int mail_icon=0x7f020035;
-        public static int password_icon=0x7f020036;
-        public static int phone_icon=0x7f020037;
-        public static int user_icon=0x7f020038;
+        public static int ic_action_content_create=0x7f020033;
+        public static int ic_action_content_save=0x7f020034;
+        public static int ic_menu_copy_holo_dark=0x7f020035;
+        public static int ic_menu_cut_holo_dark=0x7f020036;
+        public static int ic_menu_paste_holo_dark=0x7f020037;
+        public static int ic_menu_search_holo_dark=0x7f020038;
+        public static int icon=0x7f020039;
+        public static int logo=0x7f02003a;
+        public static int mail_icon=0x7f02003b;
+        public static int password_icon=0x7f02003c;
+        public static int phone_icon=0x7f02003d;
+        public static int user_icon=0x7f02003e;
     }
     public static final class id {
         public static int action_bar=0x7f080031;
@@ -1627,9 +1633,12 @@ containing a value of this type.
         public static int activity_chooser_view_content=0x7f080021;
         public static int always=0x7f080016;
         public static int beginning=0x7f080013;
-        public static int btnFBSignin=0x7f080046;
-        public static int btnSignin=0x7f080045;
-        public static int button1=0x7f08004b;
+        public static int brandImage=0x7f080043;
+        public static int brandListView=0x7f080041;
+        public static int brandName=0x7f080044;
+        public static int btnFBSignin=0x7f08004a;
+        public static int btnSignin=0x7f080049;
+        public static int button1=0x7f08004f;
         public static int checkbox=0x7f080029;
         public static int collapseActionView=0x7f080017;
         public static int decor_content_parent=0x7f08002f;
@@ -1638,33 +1647,36 @@ containing a value of this type.
         public static int disableHome=0x7f08000c;
         public static int drawer_layout=0x7f080040;
         public static int dropdown=0x7f08001c;
-        public static int editText1=0x7f080047;
-        public static int editText2=0x7f080048;
-        public static int editText3=0x7f080049;
-        public static int editText4=0x7f08004a;
+        public static int editText1=0x7f08004b;
+        public static int editText2=0x7f08004c;
+        public static int editText3=0x7f08004d;
+        public static int editText4=0x7f08004e;
         public static int edit_query=0x7f080033;
-        public static int edtPassword=0x7f080044;
-        public static int edtUsername=0x7f080043;
+        public static int edtPassword=0x7f080048;
+        public static int edtUsername=0x7f080047;
         public static int end=0x7f080014;
         public static int expand_activities_button=0x7f080022;
         public static int expanded_menu=0x7f080028;
+        public static int help=0x7f080051;
         public static int home=0x7f080004;
         public static int homeAsUp=0x7f08000d;
         public static int icon=0x7f080026;
         public static int ifRoom=0x7f080018;
         public static int image=0x7f080023;
-        public static int imageView1=0x7f080042;
-        public static int left_drawer=0x7f080041;
+        public static int imageView1=0x7f080046;
+        public static int left_drawer=0x7f080042;
         public static int listMode=0x7f080009;
         public static int list_item=0x7f080025;
         public static int middle=0x7f080015;
         public static int my_toolbar=0x7f08003f;
         public static int never=0x7f080019;
+        public static int new_game=0x7f080050;
         public static int none=0x7f08000e;
         public static int normal=0x7f08000a;
         public static int progress_circular=0x7f080005;
         public static int progress_horizontal=0x7f080006;
         public static int radio=0x7f08002b;
+        public static int ratingBar1=0x7f080045;
         public static int search_badge=0x7f080035;
         public static int search_bar=0x7f080034;
         public static int search_button=0x7f080036;
@@ -1716,9 +1728,14 @@ containing a value of this type.
         public static int abc_search_view=0x7f030015;
         public static int abc_simple_dropdown_hint=0x7f030016;
         public static int brandoption=0x7f030017;
-        public static int main=0x7f030018;
-        public static int register=0x7f030019;
-        public static int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static int brandrowview=0x7f030018;
+        public static int main=0x7f030019;
+        public static int register=0x7f03001a;
+        public static int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static int test=0x7f03001c;
+    }
+    public static final class menu {
+        public static int nav_menu=0x7f0c0000;
     }
     public static final class string {
         public static int ApplicationName=0x7f0a0011;

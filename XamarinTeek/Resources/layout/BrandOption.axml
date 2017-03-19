@@ -13,7 +13,9 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       />
+  
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
@@ -24,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/brandListView" />
-    <!--Left -->
+    <!--Left--> 
         <ListView
             android:id="@+id/left_drawer"
             android:layout_width="240dp"
@@ -33,6 +35,9 @@
             android:choiceMode="singleChoice"
             android:divider="#818181"
             android:dividerHeight="1dp"
-            android:background="#E3F2FD" />
+            android:background="#E3F2FD"
+             />
+    
+      
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

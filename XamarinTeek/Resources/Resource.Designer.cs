@@ -1096,22 +1096,40 @@ namespace XamarinTeek
 			public const int abc_textfield_search_material = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int Icon = 2130837555;
+			public const int ic_action_content_create = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int logo = 2130837556;
+			public const int ic_action_content_save = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int mail_icon = 2130837557;
+			public const int ic_menu_copy_holo_dark = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int password_icon = 2130837558;
+			public const int ic_menu_cut_holo_dark = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int phone_icon = 2130837559;
+			public const int ic_menu_paste_holo_dark = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int user_icon = 2130837560;
+			public const int ic_menu_search_holo_dark = 2130837560;
+			
+			// aapt resource value: 0x7f020039
+			public const int Icon = 2130837561;
+			
+			// aapt resource value: 0x7f02003a
+			public const int logo = 2130837562;
+			
+			// aapt resource value: 0x7f02003b
+			public const int mail_icon = 2130837563;
+			
+			// aapt resource value: 0x7f02003c
+			public const int password_icon = 2130837564;
+			
+			// aapt resource value: 0x7f02003d
+			public const int phone_icon = 2130837565;
+			
+			// aapt resource value: 0x7f02003e
+			public const int user_icon = 2130837566;
 			
 			static Drawable()
 			{
@@ -1246,6 +1264,9 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f080028
 			public const int expanded_menu = 2131230760;
 			
+			// aapt resource value: 0x7f080051
+			public const int help = 2131230801;
+			
 			// aapt resource value: 0x7f080004
 			public const int home = 2131230724;
 			
@@ -1281,6 +1302,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f080019
 			public const int never = 2131230745;
+			
+			// aapt resource value: 0x7f080050
+			public const int new_game = 2131230800;
 			
 			// aapt resource value: 0x7f08000e
 			public const int none = 2131230734;
@@ -1479,12 +1503,31 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f03001b
 			public const int support_simple_spinner_dropdown_item = 2130903067;
 			
+			// aapt resource value: 0x7f03001c
+			public const int test = 2130903068;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int nav_menu = 2131492864;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}

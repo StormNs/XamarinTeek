@@ -47,13 +47,15 @@ namespace XamarinTeek
         {
             var item = items[position];
             //set content image here using bitmap read file from url
+            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.imageUrl);
 
             if(convertView == null)
             {
-                convertView = context.LayoutInflater.Inflate(Android.Resource.Layout.ActivityListItem, null);
+                convertView = context.LayoutInflater.Inflate(Resource.Layout.BrandRowView, null);
             }
 
-            convertView.FindViewById<TextView>(Android.Resource.Id.Text1).Text = item.name;
+            convertView.FindViewById<TextView>(Resource.Id.brandName).Text = item.name;
+            convertView.FindViewById<ImageView>(Resource.Id.brandImage).SetImageBitmap(imageBitmap);
 
             return convertView;
         }

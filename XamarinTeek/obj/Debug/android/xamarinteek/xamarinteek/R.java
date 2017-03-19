@@ -1603,12 +1603,18 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int icon=0x7f020033;
-        public static final int logo=0x7f020034;
-        public static final int mail_icon=0x7f020035;
-        public static final int password_icon=0x7f020036;
-        public static final int phone_icon=0x7f020037;
-        public static final int user_icon=0x7f020038;
+        public static final int ic_action_content_create=0x7f020033;
+        public static final int ic_action_content_save=0x7f020034;
+        public static final int ic_menu_copy_holo_dark=0x7f020035;
+        public static final int ic_menu_cut_holo_dark=0x7f020036;
+        public static final int ic_menu_paste_holo_dark=0x7f020037;
+        public static final int ic_menu_search_holo_dark=0x7f020038;
+        public static final int icon=0x7f020039;
+        public static final int logo=0x7f02003a;
+        public static final int mail_icon=0x7f02003b;
+        public static final int password_icon=0x7f02003c;
+        public static final int phone_icon=0x7f02003d;
+        public static final int user_icon=0x7f02003e;
     }
     public static final class id {
         public static final int action_bar=0x7f080031;
@@ -1651,6 +1657,7 @@ containing a value of this type.
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080022;
         public static final int expanded_menu=0x7f080028;
+        public static final int help=0x7f080051;
         public static final int home=0x7f080004;
         public static final int homeAsUp=0x7f08000d;
         public static final int icon=0x7f080026;
@@ -1663,6 +1670,7 @@ containing a value of this type.
         public static final int middle=0x7f080015;
         public static final int my_toolbar=0x7f08003f;
         public static final int never=0x7f080019;
+        public static final int new_game=0x7f080050;
         public static final int none=0x7f08000e;
         public static final int normal=0x7f08000a;
         public static final int progress_circular=0x7f080005;
@@ -1724,6 +1732,10 @@ containing a value of this type.
         public static final int main=0x7f030019;
         public static final int register=0x7f03001a;
         public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int test=0x7f03001c;
+    }
+    public static final class menu {
+        public static final int nav_menu=0x7f0c0000;
     }
     public static final class string {
         public static final int ApplicationName=0x7f0a0011;

@@ -7,9 +7,8 @@
     android:background="@android:color/background_light">
     <ImageView
         android:id="@+id/brandImage"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
         android:src="@drawable/logo" />
     <LinearLayout
         android:orientation="horizontal"
@@ -23,7 +22,7 @@
             android:text="Passio"
             android:textColor="@android:color/black" />
         <RatingBar
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/ratingBar1" />
     </LinearLayout>

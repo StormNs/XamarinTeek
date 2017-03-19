@@ -22,8 +22,8 @@ namespace XamarinTeek
         private ActionBarDrawerToggle mDrawerToggle;
         private DrawerLayout mDrawerLayout;
         private ListView mLeftDrawer;
-        private ArrayAdapter mLeftAdapter;
-        private List<String> mLeftDataSet;
+       
+        
 
         private ListView brandListView;
         private List<Brand> allBrand;
@@ -38,7 +38,9 @@ namespace XamarinTeek
             brandListView = FindViewById<ListView>(Resource.Id.brandListView);
 
             //new data service and get all brand here..
-
+            Brand b1 = new Brand("Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
+            allBrand = new List<Brand>();
+            allBrand.Add(b1);
             //put list in view
             brandListView.Adapter = new BrandListAdapter(this, allBrand);
 
@@ -47,17 +49,16 @@ namespace XamarinTeek
 
             //Create side menu bar
             SupportToolbar mToolbar = (SupportToolbar) FindViewById(Resource.Id.my_toolbar);
+            mToolbar.Title= "Brands";
             mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             mLeftDrawer = FindViewById<ListView>(Resource.Id.left_drawer);
 
             SetSupportActionBar(mToolbar);
 
             //add item for menu
-            mLeftDataSet = new List<string>();
-            mLeftDataSet.Add("Change Brand");
-            mLeftDataSet.Add("Options");
-            mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, mLeftDataSet);
-            mLeftDrawer.Adapter = mLeftAdapter;
+
+
+            //mLeftDrawer.Adapter = mLeftAdapter;
 
             mDrawerToggle = new ActionBarDrawerToggle(
                 this,
@@ -67,10 +68,15 @@ namespace XamarinTeek
 
             mDrawerLayout.SetDrawerListener(mDrawerToggle);
             SupportActionBar.SetHomeButtonEnabled(true);
-            SupportActionBar.SetDisplayShowTitleEnabled(true);
+            //SupportActionBar.SetDisplayShowTitleEnabled(true);
             mDrawerToggle.SyncState();
         }
 
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.nav_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
