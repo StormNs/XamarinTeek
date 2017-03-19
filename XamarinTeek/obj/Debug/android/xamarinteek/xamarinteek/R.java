@@ -1630,9 +1630,11 @@ containing a value of this type.
         public static final int brandImage=0x7f080043;
         public static final int brandListView=0x7f080041;
         public static final int brandName=0x7f080044;
-        public static final int btnFBSignin=0x7f08004a;
-        public static final int btnSignin=0x7f080049;
-        public static final int button1=0x7f08004f;
+        public static final int btnFBSignin=0x7f08004d;
+        public static final int btnGoogleSignin=0x7f08004e;
+        public static final int btnLogin=0x7f08004a;
+        public static final int btnRegister=0x7f080054;
+        public static final int btnSignUp=0x7f08004b;
         public static final int checkbox=0x7f080029;
         public static final int collapseActionView=0x7f080017;
         public static final int decor_content_parent=0x7f08002f;
@@ -1641,10 +1643,10 @@ containing a value of this type.
         public static final int disableHome=0x7f08000c;
         public static final int drawer_layout=0x7f080040;
         public static final int dropdown=0x7f08001c;
-        public static final int editText1=0x7f08004b;
-        public static final int editText2=0x7f08004c;
-        public static final int editText3=0x7f08004d;
-        public static final int editText4=0x7f08004e;
+        public static final int editText1=0x7f080050;
+        public static final int editText2=0x7f080051;
+        public static final int editText3=0x7f080052;
+        public static final int editText4=0x7f080053;
         public static final int edit_query=0x7f080033;
         public static final int edtPassword=0x7f080048;
         public static final int edtUsername=0x7f080047;
@@ -1658,6 +1660,7 @@ containing a value of this type.
         public static final int image=0x7f080023;
         public static final int imageView1=0x7f080046;
         public static final int left_drawer=0x7f080042;
+        public static final int linearLayout1=0x7f080049;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f080025;
         public static final int middle=0x7f080015;
@@ -1687,6 +1690,8 @@ containing a value of this type.
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
         public static final int title=0x7f080027;
+        public static final int txtForgotPassword=0x7f08004c;
+        public static final int txtSignUp=0x7f08004f;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
         public static final int withText=0x7f08001a;

@@ -1183,14 +1183,20 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f080044
 			public const int brandName = 2131230788;
 			
+			// aapt resource value: 0x7f08004d
+			public const int btnFBSignin = 2131230797;
+			
+			// aapt resource value: 0x7f08004e
+			public const int btnGoogleSignin = 2131230798;
+			
 			// aapt resource value: 0x7f08004a
-			public const int btnFBSignin = 2131230794;
+			public const int btnLogin = 2131230794;
 			
-			// aapt resource value: 0x7f080049
-			public const int btnSignin = 2131230793;
+			// aapt resource value: 0x7f080054
+			public const int btnRegister = 2131230804;
 			
-			// aapt resource value: 0x7f08004f
-			public const int button1 = 2131230799;
+			// aapt resource value: 0x7f08004b
+			public const int btnSignUp = 2131230795;
 			
 			// aapt resource value: 0x7f080029
 			public const int checkbox = 2131230761;
@@ -1216,17 +1222,17 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f08001c
 			public const int dropdown = 2131230748;
 			
-			// aapt resource value: 0x7f08004b
-			public const int editText1 = 2131230795;
+			// aapt resource value: 0x7f080050
+			public const int editText1 = 2131230800;
 			
-			// aapt resource value: 0x7f08004c
-			public const int editText2 = 2131230796;
+			// aapt resource value: 0x7f080051
+			public const int editText2 = 2131230801;
 			
-			// aapt resource value: 0x7f08004d
-			public const int editText3 = 2131230797;
+			// aapt resource value: 0x7f080052
+			public const int editText3 = 2131230802;
 			
-			// aapt resource value: 0x7f08004e
-			public const int editText4 = 2131230798;
+			// aapt resource value: 0x7f080053
+			public const int editText4 = 2131230803;
 			
 			// aapt resource value: 0x7f080033
 			public const int edit_query = 2131230771;
@@ -1266,6 +1272,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f080042
 			public const int left_drawer = 2131230786;
+			
+			// aapt resource value: 0x7f080049
+			public const int linearLayout1 = 2131230793;
 			
 			// aapt resource value: 0x7f080009
 			public const int listMode = 2131230729;
@@ -1353,6 +1362,12 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f080027
 			public const int title = 2131230759;
+			
+			// aapt resource value: 0x7f08004c
+			public const int txtForgotPassword = 2131230796;
+			
+			// aapt resource value: 0x7f08004f
+			public const int txtSignUp = 2131230799;
 			
 			// aapt resource value: 0x7f080008
 			public const int up = 2131230728;

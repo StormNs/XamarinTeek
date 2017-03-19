@@ -1627,9 +1627,14 @@ containing a value of this type.
         public static int activity_chooser_view_content=0x7f080021;
         public static int always=0x7f080016;
         public static int beginning=0x7f080013;
-        public static int btnFBSignin=0x7f080046;
-        public static int btnSignin=0x7f080045;
-        public static int button1=0x7f08004b;
+        public static int brandImage=0x7f080043;
+        public static int brandListView=0x7f080041;
+        public static int brandName=0x7f080044;
+        public static int btnFBSignin=0x7f08004d;
+        public static int btnGoogleSignin=0x7f08004e;
+        public static int btnLogin=0x7f08004a;
+        public static int btnRegister=0x7f080054;
+        public static int btnSignUp=0x7f08004b;
         public static int checkbox=0x7f080029;
         public static int collapseActionView=0x7f080017;
         public static int decor_content_parent=0x7f08002f;
@@ -1638,13 +1643,13 @@ containing a value of this type.
         public static int disableHome=0x7f08000c;
         public static int drawer_layout=0x7f080040;
         public static int dropdown=0x7f08001c;
-        public static int editText1=0x7f080047;
-        public static int editText2=0x7f080048;
-        public static int editText3=0x7f080049;
-        public static int editText4=0x7f08004a;
+        public static int editText1=0x7f080050;
+        public static int editText2=0x7f080051;
+        public static int editText3=0x7f080052;
+        public static int editText4=0x7f080053;
         public static int edit_query=0x7f080033;
-        public static int edtPassword=0x7f080044;
-        public static int edtUsername=0x7f080043;
+        public static int edtPassword=0x7f080048;
+        public static int edtUsername=0x7f080047;
         public static int end=0x7f080014;
         public static int expand_activities_button=0x7f080022;
         public static int expanded_menu=0x7f080028;
@@ -1653,8 +1658,9 @@ containing a value of this type.
         public static int icon=0x7f080026;
         public static int ifRoom=0x7f080018;
         public static int image=0x7f080023;
-        public static int imageView1=0x7f080042;
-        public static int left_drawer=0x7f080041;
+        public static int imageView1=0x7f080046;
+        public static int left_drawer=0x7f080042;
+        public static int linearLayout1=0x7f080049;
         public static int listMode=0x7f080009;
         public static int list_item=0x7f080025;
         public static int middle=0x7f080015;
@@ -1665,6 +1671,7 @@ containing a value of this type.
         public static int progress_circular=0x7f080005;
         public static int progress_horizontal=0x7f080006;
         public static int radio=0x7f08002b;
+        public static int ratingBar1=0x7f080045;
         public static int search_badge=0x7f080035;
         public static int search_bar=0x7f080034;
         public static int search_button=0x7f080036;
@@ -1683,6 +1690,8 @@ containing a value of this type.
         public static int submit_area=0x7f08003c;
         public static int tabMode=0x7f08000b;
         public static int title=0x7f080027;
+        public static int txtForgotPassword=0x7f08004c;
+        public static int txtSignUp=0x7f08004f;
         public static int up=0x7f080008;
         public static int useLogo=0x7f080012;
         public static int withText=0x7f08001a;
@@ -1716,9 +1725,10 @@ containing a value of this type.
         public static int abc_search_view=0x7f030015;
         public static int abc_simple_dropdown_hint=0x7f030016;
         public static int brandoption=0x7f030017;
-        public static int main=0x7f030018;
-        public static int register=0x7f030019;
-        public static int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static int brandrowview=0x7f030018;
+        public static int main=0x7f030019;
+        public static int register=0x7f03001a;
+        public static int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class string {
         public static int ApplicationName=0x7f0a0011;

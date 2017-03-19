@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>03/18/2017 3:36:03 PM</xs:documentation>
+    <xs:documentation>03/19/2017 12:06:49 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -12,8 +12,34 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/abc_action_bar_title_item" />
+            <xs:enumeration value="@layout/abc_action_bar_up_container" />
+            <xs:enumeration value="@layout/abc_action_bar_view_list_nav_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_layout" />
+            <xs:enumeration value="@layout/abc_action_mode_bar" />
+            <xs:enumeration value="@layout/abc_action_mode_close_item_material" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_include" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_list_item" />
+            <xs:enumeration value="@layout/abc_expanded_menu_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_checkbox" />
+            <xs:enumeration value="@layout/abc_list_menu_item_icon" />
+            <xs:enumeration value="@layout/abc_list_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_radio" />
+            <xs:enumeration value="@layout/abc_popup_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_screen_content_include" />
+            <xs:enumeration value="@layout/abc_screen_simple" />
+            <xs:enumeration value="@layout/abc_screen_simple_overlay_action_mode" />
+            <xs:enumeration value="@layout/abc_screen_toolbar" />
+            <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
+            <xs:enumeration value="@layout/abc_search_view" />
+            <xs:enumeration value="@layout/abc_simple_dropdown_hint" />
+            <xs:enumeration value="@layout/brandoption" />
+            <xs:enumeration value="@layout/brandrowview" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/register" />
+            <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -62,8 +88,34 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/abc_action_bar_title_item" />
+            <xs:enumeration value="@layout/abc_action_bar_up_container" />
+            <xs:enumeration value="@layout/abc_action_bar_view_list_nav_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_layout" />
+            <xs:enumeration value="@layout/abc_action_mode_bar" />
+            <xs:enumeration value="@layout/abc_action_mode_close_item_material" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_include" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_list_item" />
+            <xs:enumeration value="@layout/abc_expanded_menu_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_checkbox" />
+            <xs:enumeration value="@layout/abc_list_menu_item_icon" />
+            <xs:enumeration value="@layout/abc_list_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_radio" />
+            <xs:enumeration value="@layout/abc_popup_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_screen_content_include" />
+            <xs:enumeration value="@layout/abc_screen_simple" />
+            <xs:enumeration value="@layout/abc_screen_simple_overlay_action_mode" />
+            <xs:enumeration value="@layout/abc_screen_toolbar" />
+            <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
+            <xs:enumeration value="@layout/abc_search_view" />
+            <xs:enumeration value="@layout/abc_simple_dropdown_hint" />
+            <xs:enumeration value="@layout/brandoption" />
+            <xs:enumeration value="@layout/brandrowview" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/register" />
+            <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -112,8 +164,34 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/abc_action_bar_title_item" />
+            <xs:enumeration value="@layout/abc_action_bar_up_container" />
+            <xs:enumeration value="@layout/abc_action_bar_view_list_nav_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_layout" />
+            <xs:enumeration value="@layout/abc_action_mode_bar" />
+            <xs:enumeration value="@layout/abc_action_mode_close_item_material" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_include" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_list_item" />
+            <xs:enumeration value="@layout/abc_expanded_menu_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_checkbox" />
+            <xs:enumeration value="@layout/abc_list_menu_item_icon" />
+            <xs:enumeration value="@layout/abc_list_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_radio" />
+            <xs:enumeration value="@layout/abc_popup_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_screen_content_include" />
+            <xs:enumeration value="@layout/abc_screen_simple" />
+            <xs:enumeration value="@layout/abc_screen_simple_overlay_action_mode" />
+            <xs:enumeration value="@layout/abc_screen_toolbar" />
+            <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
+            <xs:enumeration value="@layout/abc_search_view" />
+            <xs:enumeration value="@layout/abc_simple_dropdown_hint" />
+            <xs:enumeration value="@layout/brandoption" />
+            <xs:enumeration value="@layout/brandrowview" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/register" />
+            <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -162,8 +240,34 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/abc_action_bar_title_item" />
+            <xs:enumeration value="@layout/abc_action_bar_up_container" />
+            <xs:enumeration value="@layout/abc_action_bar_view_list_nav_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_action_menu_layout" />
+            <xs:enumeration value="@layout/abc_action_mode_bar" />
+            <xs:enumeration value="@layout/abc_action_mode_close_item_material" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_include" />
+            <xs:enumeration value="@layout/abc_activity_chooser_view_list_item" />
+            <xs:enumeration value="@layout/abc_expanded_menu_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_checkbox" />
+            <xs:enumeration value="@layout/abc_list_menu_item_icon" />
+            <xs:enumeration value="@layout/abc_list_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_list_menu_item_radio" />
+            <xs:enumeration value="@layout/abc_popup_menu_item_layout" />
+            <xs:enumeration value="@layout/abc_screen_content_include" />
+            <xs:enumeration value="@layout/abc_screen_simple" />
+            <xs:enumeration value="@layout/abc_screen_simple_overlay_action_mode" />
+            <xs:enumeration value="@layout/abc_screen_toolbar" />
+            <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
+            <xs:enumeration value="@layout/abc_search_view" />
+            <xs:enumeration value="@layout/abc_simple_dropdown_hint" />
+            <xs:enumeration value="@layout/brandoption" />
+            <xs:enumeration value="@layout/brandrowview" />
             <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/register" />
+            <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -204,6 +308,23 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
+  <xs:attribute name="openDrawer">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="end" />
+            <xs:enumeration value="left" />
+            <xs:enumeration value="right" />
+            <xs:enumeration value="start" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="text">
     <xs:annotation>
       <xs:documentation>Text to display.</xs:documentation>
@@ -212,8 +333,26 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/abc_action_bar_home_description" />
+            <xs:enumeration value="@string/abc_action_bar_home_description_format" />
+            <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
+            <xs:enumeration value="@string/abc_action_bar_up_description" />
+            <xs:enumeration value="@string/abc_action_menu_overflow_description" />
+            <xs:enumeration value="@string/abc_action_mode_done" />
+            <xs:enumeration value="@string/abc_activity_chooser_view_see_all" />
+            <xs:enumeration value="@string/abc_activitychooserview_choose_application" />
+            <xs:enumeration value="@string/abc_searchview_description_clear" />
+            <xs:enumeration value="@string/abc_searchview_description_query" />
+            <xs:enumeration value="@string/abc_searchview_description_search" />
+            <xs:enumeration value="@string/abc_searchview_description_submit" />
+            <xs:enumeration value="@string/abc_searchview_description_voice" />
+            <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
+            <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
+            <xs:enumeration value="@string/abc_toolbar_collapse_description" />
             <xs:enumeration value="@string/ApplicationName" />
+            <xs:enumeration value="@string/closeDrawer" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/openDrawer" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
