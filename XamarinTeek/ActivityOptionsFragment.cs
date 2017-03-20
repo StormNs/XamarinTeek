@@ -10,6 +10,9 @@ using Android.Views;
 using Android.Widget;
 using XamarinTeek.Object;
 using Android.Support.V4.App;
+using System.Net;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace XamarinTeek
 {
@@ -30,7 +33,22 @@ namespace XamarinTeek
         {
             base.OnCreateView(inflater, container, savedInstanceState);
 
+            //get activity list
+
+            //string url = "http://10.0.2.2:63096/Activity/Activity/getActivitiesByEventId?eventId=<value>";
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            //request.Method = "GET";
+            //request.ContentType = "application/json";
+            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+            //Stream rebut = myResp.GetResponseStream();
+            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+            //string info = readStream.ReadToEnd();
+            //var ActivityList = JsonConvert.DeserializeObject<List<Activities>>(info);
+
+            //end
+
             View view = inflater.Inflate(Resource.Layout.ActivityOptions, container, false);
+
             ListView listActivity = view.FindViewById<ListView>(Resource.Id.listActivity);
 
             ImageView imgEvent = view.FindViewById<ImageView>(Resource.Id.imgEvent);

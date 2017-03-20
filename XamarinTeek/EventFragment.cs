@@ -9,9 +9,10 @@ using Android.Views;
 using Android.Widget;
 using XamarinTeek.Resources;
 using Android.Support.V4.App;
-
-
-
+using System.Net;
+using Newtonsoft.Json;
+using System.IO;
+using XamarinTeek.Object;
 
 namespace XamarinTeek
 {
@@ -33,6 +34,27 @@ namespace XamarinTeek
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+            //getEventList
+
+            ////string data = "brandId=1"; //replace <value>
+            ////byte[] dataStream = Encoding.UTF8.GetBytes(data);
+            //string url = "http://10.0.2.2:63096/Event/Event/getEventsByBrandId?brandId=1";
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            //request.Method = "GET";
+            //request.ContentType = "application/json";
+            ////request.ContentLength = dataStream.Length;
+            ////Stream newStream = request.GetRequestStream();
+            ////// Send the data.
+            ////newStream.Write(dataStream, 0, dataStream.Length);
+            ////newStream.Close();
+            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+            //Stream rebut = myResp.GetResponseStream();
+            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+            //string info = readStream.ReadToEnd();
+            //var EventList = JsonConvert.DeserializeObject<List<Events>>(info);
+
+            //end
+
             View view = inflater.Inflate(Resource.Layout.Event, container, false);
             var eventImg = Resource.Drawable.logo;
             var eventDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."

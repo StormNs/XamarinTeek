@@ -18,8 +18,9 @@ namespace XamarinTeek.Object
         {
         }
 
-        public Events(string name, string description, DateTime startDate, DateTime endDate, int brandId, int entryPoint, string imageUrl, int type)
+        public Events(int id,string name, string description, DateTime startDate, DateTime endDate, int brandId, int entryPoint, string imageUrl)
         {
+            this.Id = id;
             this.name = name;
             this.description = description;
             this.startDate = startDate;
@@ -27,9 +28,8 @@ namespace XamarinTeek.Object
             this.brandId = brandId;
             this.entryPoint = entryPoint;
             this.imageUrl = imageUrl;
-            this.type = type;
         }
-
+        public int Id { get; set; }
         public String name { get; set; }
         public string description { get; set; }
         public DateTime startDate { get; set; }
@@ -37,6 +37,5 @@ namespace XamarinTeek.Object
         public int brandId { get; set; }
         public int entryPoint { get; set; }
         public String imageUrl { get; set; }
-        public int type { get; set; }
     }
 }
