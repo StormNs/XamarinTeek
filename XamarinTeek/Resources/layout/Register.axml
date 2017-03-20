@@ -6,6 +6,18 @@
     android:background="@android:color/background_light"
     android:minWidth="25px"
     android:minHeight="25px">
+    <TextView
+        android:text="Sign up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSignUp"
+        android:textColor="@color/background_material_dark"
+        android:gravity="center_horizontal"
+        android:textStyle="normal"
+        android:textSize="32sp"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="10px" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,8 +62,9 @@
         android:text="Register New Account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@color/button_material_light"
         android:layout_marginLeft="20px"
         android:layout_marginRight="20px"
-        android:id="@+id/button1" />
+        android:layout_marginTop="10px"
+        android:id="@+id/btnRegister" />
 </LinearLayout>

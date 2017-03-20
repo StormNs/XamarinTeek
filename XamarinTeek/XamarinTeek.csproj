@@ -77,8 +77,14 @@
     <Compile Include="Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
     <Compile Include="BrandOptionActivity.cs" />
+
     <Compile Include="BrandOptionsFragment.cs" />
+
+    <Compile Include="EventActivity.cs" />
+
     <Compile Include="MainActivity.cs" />
+    <Compile Include="RegisterActivity.cs" />
+    <Compile Include="Resources\JoinEventDialog.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ultility.cs" />
@@ -97,6 +103,7 @@
     <AndroidResource Include="Resources\layout\Register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+
     <AndroidResource Include="Resources\layout\BrandRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -110,6 +117,14 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\BrandOptions.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+
+
+    <AndroidResource Include="Resources\layout\Event.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JoinEvent.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

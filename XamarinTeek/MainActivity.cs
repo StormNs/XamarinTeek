@@ -19,18 +19,20 @@ namespace XamarinTeek
             // Set our view from the "main" layout resource
 
             SetContentView(Resource.Layout.Main);
-            Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignin);
-            btnSignIn.Click += delegate
+
+            Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
+            btnLogin.Click += delegate
             {
                 StartActivity(typeof(BrandOptionActivity));
             };
-           
 
+            Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignUp);
+            btnSignIn.Click += delegate
+            {
+                StartActivity(typeof(RegisterActivity));
+            };
 
         }
-
-       
-
         
     }
 }
