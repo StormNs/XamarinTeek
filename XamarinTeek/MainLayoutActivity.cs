@@ -15,12 +15,12 @@ using Android.Support.Design.Widget;
 
 namespace XamarinTeek
 {
-    [Activity(Label = "BrandOptionActivity", Theme ="@style/MyTheme")]
+    [Activity(Label = "BrandOptionActivity")]
     public class MainLayoutActivity : BaseActivity
     {
         DrawerLayout drawerLayout;
         NavigationView navigationView;
-
+        
         protected override int LayoutResource
         {
             get
@@ -36,10 +36,10 @@ namespace XamarinTeek
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+           
             // Create your application here
             //SetContentView(Resource.Layout.BrandOption);
-           
+
 
             drawerLayout = this.FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
@@ -49,6 +49,8 @@ namespace XamarinTeek
             //setup navigation view
             navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
 
+
+            
             //handle navigation
             navigationView.NavigationItemSelected += (sender, e) =>
             {
@@ -64,9 +66,9 @@ namespace XamarinTeek
                     case Resource.Id.nav_brand:
                         ListItemClicked(0);
                         break;
-                    case Resource.Id.nav_setting:
-                        ListItemClicked(1);
-                        break;
+                    //case Resource.Id.nav_setting:
+                    //    ListItemClicked(1);
+                    //    break;
 
                 }
 
@@ -82,18 +84,17 @@ namespace XamarinTeek
                 ListItemClicked(0);
             }
 
-
+            
         }
 
-        int oldPosition = -1;
+        //int oldPosition = -1;
         private void ListItemClicked(int position)
         {
+
             //this way we don't load twice, but you might want to modify this a bit.
-            if (position == oldPosition)
-                return;
-
-            oldPosition = position;
-
+            //if (position == oldPosition)
+            //    return;
+            //oldPosition = position;
             Android.Support.V4.App.Fragment fragment = null;
             switch (position)
             {
@@ -105,8 +106,8 @@ namespace XamarinTeek
                     //break;
             }
 
-            SupportFragmentManager.BeginTransaction()
-                .Replace(Resource.Id.content_frame, fragment)
+
+            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.content_frame, fragment)
                 .Commit();
         }
 

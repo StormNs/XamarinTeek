@@ -18,6 +18,8 @@ namespace XamarinTeek
     {
         private ListView brandListView;
         private List<Brand> allBrand;
+        //private static FragmentManager dadFrag;
+        
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -44,13 +46,14 @@ namespace XamarinTeek
             View view =  inflater.Inflate(Resource.Layout.BrandOptions, container, false);
 
             brandListView = view.FindViewById<ListView>(Resource.Id.brandListView);
-
             ////new data service and get all brand here..
             Brand b1 = new Brand("Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
             allBrand = new List<Brand>();
             allBrand.Add(b1);
             //put list in list view
-            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand);
+            FragmentManager fragManager = FragmentManager;
+            Fragment fragment = EventListFragment.NewInstance();
+            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand, fragManager, fragment);
 
             //fast scroll if has long list data
             brandListView.FastScrollEnabled = true;

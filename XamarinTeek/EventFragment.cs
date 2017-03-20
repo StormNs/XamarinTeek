@@ -18,6 +18,8 @@ namespace XamarinTeek
     
     public class EventFragment : Fragment
     {
+       
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,7 +35,7 @@ namespace XamarinTeek
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View view = inflater.Inflate(Resource.Layout.Event, container, false);
+            View view = inflater.Inflate(Resource.Layout.EventDetail, container, false);
             var eventImg = Resource.Drawable.logo;
             var eventDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                 + " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
@@ -51,8 +53,11 @@ namespace XamarinTeek
             TextView txtDescription = view.FindViewById<TextView>(Resource.Id.txtDescription);
             txtDescription.Text = eventDescription;
 
+            
+
             TextView txtPoint = view.FindViewById<TextView>(Resource.Id.txtPoint);
             txtPoint.Text = "Need " + eventPoint + (eventPoint > 1 ? " point" : " points") + " to join";
+
 
             Button btnJoin = view.FindViewById<Button>(Resource.Id.btnJoin);
             btnJoin.Click += delegate
@@ -63,6 +68,8 @@ namespace XamarinTeek
                 dialog.Show(trans, "JoinDialog");
             };
 
+
+           
             return view;
         }
 
