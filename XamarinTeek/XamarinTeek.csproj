@@ -74,7 +74,7 @@
   <ItemGroup>
     <Compile Include="ActionBarDrawerToggle.cs" />
     <Compile Include="BaseActivity.cs" />
-    <Compile Include="Brand.cs" />
+    <Compile Include="Object\Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
     <Compile Include="MainLayoutActivity.cs" />
     <Compile Include="BrandOptionsFragment.cs" />
