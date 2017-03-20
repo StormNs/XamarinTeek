@@ -41,7 +41,6 @@ namespace XamarinTeek
 
             // Create your application here
             //SetContentView(Resource.Layout.BrandOption);
-
            
 
             drawerLayout = this.FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
@@ -76,11 +75,11 @@ namespace XamarinTeek
 
 
             //if first time you will want to go ahead and click first item.
-            //if (savedInstanceState == null)
-            //{
-            //    navigationView.SetCheckedItem(Resource.Id.nav_brand);
-            //    ListItemClicked(0);
-            //}
+            if (savedInstanceState == null)
+            {
+                navigationView.SetCheckedItem(Resource.Id.nav_brand);
+                ListItemClicked(0);
+            }
 
 
         }
