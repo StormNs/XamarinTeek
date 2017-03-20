@@ -23,7 +23,7 @@ namespace XamarinTeek
             Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnLogin.Click += delegate
             {
-                StartActivity(typeof(BrandOptionActivity));
+                StartActivity(typeof(MainLayoutActivity));
             };
 
             Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignUp);

@@ -76,12 +76,9 @@
     <Compile Include="BaseActivity.cs" />
     <Compile Include="Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
-    <Compile Include="BrandOptionActivity.cs" />
-
+    <Compile Include="MainLayoutActivity.cs" />
     <Compile Include="BrandOptionsFragment.cs" />
-
-    <Compile Include="EventActivity.cs" />
-
+    <Compile Include="EventFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\JoinEventDialog.cs" />
@@ -97,13 +94,12 @@
     <AndroidResource Include="Resources\drawable\brand_icon.png" />
     <AndroidResource Include="Resources\drawable\ic_menu.png" />
     <AndroidResource Include="Resources\drawable\ic_settings.png" />
-    <AndroidResource Include="Resources\layout\BrandOption.axml">
+    <AndroidResource Include="Resources\layout\MainLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-
     <AndroidResource Include="Resources\layout\BrandRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -119,8 +115,6 @@
     <AndroidResource Include="Resources\layout\BrandOptions.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-
-
     <AndroidResource Include="Resources\layout\Event.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
