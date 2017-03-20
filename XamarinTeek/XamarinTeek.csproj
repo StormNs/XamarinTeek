@@ -107,6 +107,7 @@
     <AndroidResource Include="Resources\drawable\brand_icon.png" />
     <AndroidResource Include="Resources\drawable\ic_menu.png" />
     <AndroidResource Include="Resources\drawable\ic_settings.png" />
+    <AndroidResource Include="Resources\layout\ActivityOptions.axml" />
     <AndroidResource Include="Resources\layout\MainLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -140,6 +141,7 @@
     <AndroidResource Include="Resources\layout\EventRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityRowView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

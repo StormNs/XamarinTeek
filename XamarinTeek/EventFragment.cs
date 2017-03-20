@@ -57,7 +57,7 @@ namespace XamarinTeek
 
             //end
 
-            View view = inflater.Inflate(Resource.Layout.Event, container, false);
+            View view = inflater.Inflate(Resource.Layout.EventDetail, container, false);
             var eventImg = Resource.Drawable.logo;
             var eventDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                 + " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
