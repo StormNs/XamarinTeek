@@ -12,9 +12,13 @@ using Android.Widget;
 
 namespace XamarinTeek.Object
 {
-    class Event
+    class Events
     {
-        public Event(string name, string description, DateTime startDate, DateTime endDate, int brandId, int entryPoint, string imageUrl)
+        public Events()
+        {
+        }
+
+        public Events(string name, string description, DateTime startDate, DateTime endDate, int brandId, int entryPoint, string imageUrl, int type)
         {
             this.name = name;
             this.description = description;
@@ -23,6 +27,7 @@ namespace XamarinTeek.Object
             this.brandId = brandId;
             this.entryPoint = entryPoint;
             this.imageUrl = imageUrl;
+            this.type = type;
         }
 
         public String name { get; set; }
@@ -32,5 +37,6 @@ namespace XamarinTeek.Object
         public int brandId { get; set; }
         public int entryPoint { get; set; }
         public String imageUrl { get; set; }
+        public int type { get; set; }
     }
 }

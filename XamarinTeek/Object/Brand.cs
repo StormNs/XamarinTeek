@@ -4,6 +4,10 @@ namespace XamarinTeek
 {
     public class Brand
     {
+        public Brand()
+        {
+        }
+
         public Brand(string name, string imageUrl)
         {
             this.name = name;

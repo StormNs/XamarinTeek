@@ -12,9 +12,13 @@ using Android.Widget;
 
 namespace XamarinTeek.Object
 {
-    class Activity
+    class Activities
     {
-        public Activity(string name,int eventId,DateTime startTime,DateTime endTime,int prizePoint, string imageUrl)
+        public Activities()
+        {
+        }
+
+        public Activities(string name,int eventId,DateTime startTime,DateTime endTime,int prizePoint, string imageUrl)
         {
             this.name = name;
             this.eventId = eventId;

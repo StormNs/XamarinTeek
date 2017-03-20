@@ -73,13 +73,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionBarDrawerToggle.cs" />
+    <Compile Include="ActivityListAdapter.cs" />
+    <Compile Include="ActivityOptionsFragment.cs" />
     <Compile Include="BaseActivity.cs" />
+    <Compile Include="Object\Activities.cs" />
     <Compile Include="Object\Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
     <Compile Include="MainLayoutActivity.cs" />
     <Compile Include="BrandOptionsFragment.cs" />
     <Compile Include="EventFragment.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Object\Events.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\JoinEventDialog.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -119,6 +123,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\JoinEvent.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityOptions.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
