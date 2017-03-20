@@ -19,6 +19,8 @@ namespace XamarinTeek
     
     public class EventFragment : Fragment
     {
+       
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -73,8 +75,11 @@ namespace XamarinTeek
             TextView txtDescription = view.FindViewById<TextView>(Resource.Id.txtDescription);
             txtDescription.Text = eventDescription;
 
+            
+
             TextView txtPoint = view.FindViewById<TextView>(Resource.Id.txtPoint);
             txtPoint.Text = "Need " + eventPoint + (eventPoint > 1 ? " point" : " points") + " to join";
+
 
             Button btnJoin = view.FindViewById<Button>(Resource.Id.btnJoin);
             btnJoin.Click += delegate
@@ -85,6 +90,8 @@ namespace XamarinTeek
                 dialog.Show(trans, "JoinDialog");
             };
 
+
+           
             return view;
         }
 

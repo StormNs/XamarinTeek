@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     android:background="@android:color/background_light">
-    <ImageView
-        android:id="@+id/brandImage"
+    <ImageButton
+        android:id="@+id/btnBrandImage"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:src="@drawable/logo" />
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" 
+        android:background="@android:color/transparent"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

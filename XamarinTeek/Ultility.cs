@@ -25,14 +25,7 @@ namespace XamarinTeek
             return imageBitmap;
         }
 
-        //public static ArrayAdapter GetItemForActionBar()
-        //{
-        //     List<String> mLeftDataSet = new List<String>();
-        //      ArrayAdapter mLeftAdapter;
-        //mLeftDataSet.Add("Change Brand");
-        //    mLeftDataSet.Add("Options");
-        //    mLeftAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.ActivityListItem, mLeftDataSet);
-        //}
+       
     }
 
 }

@@ -22,6 +22,8 @@ namespace XamarinTeek
     {
         private ListView brandListView;
         private List<Brand> allBrand;
+        //private static FragmentManager dadFrag;
+        
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -65,7 +67,9 @@ namespace XamarinTeek
             allBrand = new List<Brand>();
             allBrand.Add(b1);
             //put list in list view
-            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand);
+            FragmentManager fragManager = FragmentManager;
+            Fragment fragment = EventListFragment.NewInstance();
+            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand, fragManager, fragment);
 
             //fast scroll if has long list data
             brandListView.FastScrollEnabled = true;

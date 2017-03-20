@@ -1848,17 +1848,20 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f020058
 			public const int mail_icon = 2130837592;
 			
-			// aapt resource value: 0x7f02005c
-			public const int notification_template_icon_bg = 2130837596;
+			// aapt resource value: 0x7f02005d
+			public const int notification_template_icon_bg = 2130837597;
 			
 			// aapt resource value: 0x7f020059
-			public const int password_icon = 2130837593;
+			public const int passio_icon = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int phone_icon = 2130837594;
+			public const int password_icon = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int user_icon = 2130837595;
+			public const int phone_icon = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int user_icon = 2130837596;
 			
 			static Drawable()
 			{
@@ -1872,6 +1875,12 @@ namespace XamarinTeek
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f06007b
+			public const int EventDescription = 2131099771;
+			
+			// aapt resource value: 0x7f06007a
+			public const int EventImage = 2131099770;
 			
 			// aapt resource value: 0x7f06008e
 			public const int action0 = 2131099790;
@@ -1933,17 +1942,14 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
-			// aapt resource value: 0x7f06006f
-			public const int brandImage = 2131099759;
-			
-			// aapt resource value: 0x7f06006e
-			public const int brandListView = 2131099758;
+			// aapt resource value: 0x7f060069
+			public const int brandListView = 2131099753;
 			
 			// aapt resource value: 0x7f060070
 			public const int brandName = 2131099760;
 			
-			// aapt resource value: 0x7f06006d
-			public const int btnActivity = 2131099757;
+			// aapt resource value: 0x7f06006a
+			public const int btnBrandImage = 2131099754;
 			
 			// aapt resource value: 0x7f060087
 			public const int btnFBSignin = 2131099783;
@@ -1951,8 +1957,8 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f060088
 			public const int btnGoogleSignin = 2131099784;
 			
-			// aapt resource value: 0x7f06007c
-			public const int btnJoin = 2131099772;
+			// aapt resource value: 0x7f060078
+			public const int btnJoin = 2131099768;
 			
 			// aapt resource value: 0x7f060084
 			public const int btnLogin = 2131099780;
@@ -1962,6 +1968,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f060085
 			public const int btnSignUp = 2131099781;
+			
+			// aapt resource value: 0x7f06007f
+			public const int button1 = 2131099775;
 			
 			// aapt resource value: 0x7f06007f
 			public const int button1 = 2131099775;
@@ -2068,6 +2077,12 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f060024
 			public const int enterAlwaysCollapsed = 2131099684;
 			
+			// aapt resource value: 0x7f06007c
+			public const int eveBrandImage = 2131099772;
+			
+			// aapt resource value: 0x7f06007d
+			public const int eventList = 2131099773;
+			
 			// aapt resource value: 0x7f060025
 			public const int exitUntilCollapsed = 2131099685;
 			
@@ -2110,8 +2125,8 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f06006b
 			public const int imgActivity = 2131099755;
 			
-			// aapt resource value: 0x7f060069
-			public const int imgEvent = 2131099753;
+			// aapt resource value: 0x7f060099
+			public const int info = 2131099801;
 			
 			// aapt resource value: 0x7f060099
 			public const int info = 2131099801;
@@ -2127,6 +2142,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f060097
 			public const int line3 = 2131099799;
+			
+			// aapt resource value: 0x7f060083
+			public const int linearLayout1 = 2131099779;
 			
 			// aapt resource value: 0x7f060083
 			public const int linearLayout1 = 2131099779;
@@ -2527,13 +2545,13 @@ namespace XamarinTeek
 			public const int design_navigation_item_subheader = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_navigation_menu = 2130903079;
+			public const int EventDetail = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_navigation_menu_item = 2130903080;
+			public const int EventRowView = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int Event = 2130903081;
+			public const int EventsList = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
 			public const int JoinEvent = 2130903082;
