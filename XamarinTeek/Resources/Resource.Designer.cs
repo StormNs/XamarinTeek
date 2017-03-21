@@ -2065,18 +2065,6 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f06008d
 			public const int drawer_layout = 2131099789;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int editText1 = 2131099808;
-			
-			// aapt resource value: 0x7f0600a1
-			public const int editText2 = 2131099809;
-			
-			// aapt resource value: 0x7f0600a2
-			public const int editText3 = 2131099810;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int editText4 = 2131099811;
-			
 			// aapt resource value: 0x7f06005c
 			public const int edit_query = 2131099740;
 			
@@ -2232,6 +2220,18 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f060071
 			public const int ratingBar1 = 2131099761;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int regisEmail = 2131099811;
+			
+			// aapt resource value: 0x7f0600a1
+			public const int regisPassword = 2131099809;
+			
+			// aapt resource value: 0x7f0600a2
+			public const int regisPhone = 2131099810;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int regisUsername = 2131099808;
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;

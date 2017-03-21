@@ -27,7 +27,7 @@
         android:drawableLeft="@drawable/user_icon"
         android:drawablePadding="10dp"
         android:layout_marginLeft="20px"
-        android:id="@+id/editText1" />
+        android:id="@+id/regisUsername" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         android:drawableLeft="@drawable/password_icon"
         android:drawablePadding="10dp"
         android:layout_marginLeft="20px"
-        android:id="@+id/editText2" />
+        android:id="@+id/regisPassword" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         android:drawableLeft="@drawable/phone_icon"
         android:drawablePadding="10dp"
         android:layout_marginLeft="20px"
-        android:id="@+id/editText3" />
+        android:id="@+id/regisPhone" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         android:drawableLeft="@drawable/mail_icon"
         android:drawablePadding="10dp"
         android:layout_marginLeft="20px"
-        android:id="@+id/editText4" />
+        android:id="@+id/regisEmail" />
     <Button
         android:text="Register New Account"
         android:layout_width="match_parent"
