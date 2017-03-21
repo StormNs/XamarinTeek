@@ -9,6 +9,7 @@ using System.Text;
 using System.IO;
 using Newtonsoft.Json;
 using Android.Support.V4.App;
+using XamarinTeek.Object;
 
 namespace XamarinTeek
 {
@@ -34,7 +35,7 @@ namespace XamarinTeek
             Stream rebut = myResp.GetResponseStream();
             StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
             string info = readStream.ReadToEnd();
-            var validate = JsonConvert.DeserializeObject<Boolean>(info);
+            var validatedAccount = JsonConvert.DeserializeObject<Account>(info);
 
 
             //Signup
@@ -47,7 +48,7 @@ namespace XamarinTeek
             //Stream rebut = myResp.GetResponseStream();
             //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
             //string info = readStream.ReadToEnd();
-            //var success = JsonConvert.DeserializeObject<Boolean>(info);
+            //var newAccount = JsonConvert.DeserializeObject<Account>(info);
 
 
             Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
@@ -73,26 +74,26 @@ namespace XamarinTeek
         }
 
 
-        public bool CheckLogIn()
-        {
-            bool validate = false;
-            //Check account
-            string user = FindViewById<EditText>(Resource.Id.edtUsername).Text;
-            string pass = FindViewById<EditText>(Resource.Id.edtPassword).Text;
-            if(user.Length > 0 && pass.Length > 0)
-            {
-                string url = "http://10.0.2.2:63096/Account/Account/getAccountByUsernameAndPassword?username=" + user + "&password=" + pass + "";
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                request.Method = "GET";
-                request.ContentType = "application/json";
-                HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
-                Stream rebut = myResp.GetResponseStream();
-                StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
-                string info = readStream.ReadToEnd();
-                validate = JsonConvert.DeserializeObject<Boolean>(info);
-            }
-            return validate;
-        }
+        //public Account CheckLogIn()
+        //{
+        //    Account getAcc=null;
+        //    //Check account
+        //    string user = FindViewById<EditText>(Resource.Id.edtUsername).Text;
+        //    string pass = FindViewById<EditText>(Resource.Id.edtPassword).Text;
+        //    if(user.Length > 0 && pass.Length > 0)
+        //    {
+        //        string url = "http://10.0.2.2:63096/Account/Account/getAccountByUsernameAndPassword?username=" + user + "&password=" + pass + "";
+        //        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+        //        request.Method = "GET";
+        //        request.ContentType = "application/json";
+        //        HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+        //        Stream rebut = myResp.GetResponseStream();
+        //        StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+        //        string info = readStream.ReadToEnd();
+        //        getAcc= JsonConvert.DeserializeObject<Account>(info);
+        //    }
+        //    return getAcc;
+        //}
 
     }
 }
