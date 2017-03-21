@@ -22,8 +22,8 @@ namespace XamarinTeek
     {
         private ListView brandListView;
         private List<Brand> allBrand;
-        //private static FragmentManager dadFrag;
-        
+        public static FragmentManager dadFrag;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,9 +33,10 @@ namespace XamarinTeek
             // Create your fragment here
         }
 
-        public static BrandOptionsFragment NewInstance()
+        public static BrandOptionsFragment NewInstance(FragmentManager fraM)
         {
             var brandFrag = new BrandOptionsFragment { Arguments = new Bundle()};
+            dadFrag = fraM;
             return brandFrag;
         }
 
@@ -43,14 +44,15 @@ namespace XamarinTeek
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            //base.OnCreateView(inflater, container, savedInstanceState);
             
 
+            //base.OnCreateView(inflater, container, savedInstanceState);
+
+
+            this.Activity.Title = "Brands";
             View view =  inflater.Inflate(Resource.Layout.BrandOptions, container, false);
 
             brandListView = view.FindViewById<ListView>(Resource.Id.brandListView);
-
             //string url = "http://10.0.2.2:63096/Brand/Brand/getAllBrands";
             //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             //request.Method = "GET";
@@ -67,14 +69,16 @@ namespace XamarinTeek
             allBrand = new List<Brand>();
             allBrand.Add(b1);
             //put list in list view
-            FragmentManager fragManager = FragmentManager;
-            Fragment fragment = EventListFragment.NewInstance();
-            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand, fragManager, fragment);
+            //FragmentManager fragManager = FragmentManager;
+            Fragment fragment = EventListFragment.NewInstance(dadFrag);
+            brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand, dadFrag, fragment);
 
             //fast scroll if has long list data
             brandListView.FastScrollEnabled = true;
 
             return view;
         }
+
+
     }
 }

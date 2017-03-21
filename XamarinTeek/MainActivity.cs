@@ -8,6 +8,7 @@ using System.Net;
 using System.Text;
 using System.IO;
 using Newtonsoft.Json;
+using Android.Support.V4.App;
 
 namespace XamarinTeek
 {
@@ -52,6 +53,7 @@ namespace XamarinTeek
             btnLogin.Click += delegate
             {
                 StartActivity(typeof(MainLayoutActivity));
+
             };
 
             Button btnSignIn = FindViewById<Button>(Resource.Id.btnSignUp);
@@ -61,7 +63,13 @@ namespace XamarinTeek
             };
 
         }
-        
+
+
+        public override void OnBackPressed()
+        {
+            base.OnBackPressed();
+        }
+
     }
 }
 

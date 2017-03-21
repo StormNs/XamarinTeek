@@ -4,19 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-
-  <ImageButton
-      android:src="@android:drawable/ic_menu_gallery"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:scaleType="fitXY"
-      android:id="@+id/EventImage" />
-
-  <TextView
-      android:text="Text"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/EventDescription" />
-
+    android:minHeight="25px"
+    android:weightSum="20"
+    android:gravity="center">
+    <ImageButton
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_weight="10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:id="@+id/EventImage" />
+    <TextView
+        android:text="Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:id="@+id/EventDescription" />
 </LinearLayout>

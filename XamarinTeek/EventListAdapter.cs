@@ -58,22 +58,26 @@ namespace XamarinTeek
             holder.getImageButton().SetImageBitmap(imageBitmap);
             holder.getDescription().Text = item.Description;
 
-            Bundle arguments = new Bundle();
-            arguments.PutString("BrandName", item.Name);
-            arguments.PutString("BrandImageUrl", item.ImageUrl);
-            fragment.Arguments = arguments;
+            //Bundle arguments = new Bundle();
+            //arguments.PutString("BrandName", item.Name);
+            //arguments.PutString("BrandImageUrl", item.ImageUrl);
+            //fragment.Arguments = arguments;
 
 
             holder.getImageButton().Click += (sender, args) =>
             {
-                fragManager.BeginTransaction().Replace(Resource.Id.content_frame, fragment)
-                .Commit();
+                var trans = fragManager.BeginTransaction();
+                trans.Replace(Resource.Id.content_frame, fragment);
+                trans.AddToBackStack(null);
+                trans.Commit();
 
             };
             holder.getDescription().Click += (sender, args) =>
             {
-                fragManager.BeginTransaction().Replace(Resource.Id.content_frame, fragment)
-                .Commit();
+                var trans = fragManager.BeginTransaction();
+                trans.Replace(Resource.Id.content_frame, fragment);
+                trans.AddToBackStack(null);
+                trans.Commit();
 
             };
 

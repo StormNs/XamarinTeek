@@ -57,6 +57,7 @@ namespace XamarinTeek
 
             //end
 
+            this.Activity.Title = "Event Detail";
             View view = inflater.Inflate(Resource.Layout.EventDetail, container, false);
             var eventImg = Resource.Drawable.logo;
             var eventDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
@@ -94,9 +95,6 @@ namespace XamarinTeek
            
             return view;
         }
-
-      
-
 
     }
 }

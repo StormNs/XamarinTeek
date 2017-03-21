@@ -8,14 +8,23 @@ using Android.Support.V7.Widget;
 
 namespace XamarinTeek
 {
-    [Activity(Label = "BaseActivity")]
+    [Activity(Label = "BaseActivity", Icon = "@drawable/icon")]
     public abstract class BaseActivity : AppCompatActivity
     {
         public Toolbar Toolbar { get; set; }
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            try
+            {
             SetContentView(LayoutResource);
+
+            }
+            catch (System.Exception e)
+            {
+
+                throw e;
+            }
             Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             if (Toolbar != null)
             {
