@@ -48,31 +48,21 @@ namespace XamarinTeek
 
             //base.OnCreateView(inflater, container, savedInstanceState);
 
-
             this.Activity.Title = "Brands";
             View view = inflater.Inflate(Resource.Layout.BrandOptions, container, false);
 
             brandListView = view.FindViewById<ListView>(Resource.Id.brandListView);
-            //string url = "http://10.0.2.2:63096/Brand/Brand/getAllBrands";
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            //request.Method = "GET";
-            ////using GET - request.Headers.Add ("Authorization","Authorizaation value");
-            //request.ContentType = "application/json";
-            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
-            //Stream rebut = myResp.GetResponseStream();
-            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
-            //string info = readStream.ReadToEnd();
-            //var BrandList = JsonConvert.DeserializeObject<List<Brand>>(info);
-
-            ////new data service and get all brand here..
-            allBrand = new List<Brand>();
-            for (int i = 0; i < 17; i++)
-            {
-                Brand b1 = new Brand(1, "Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
-                allBrand.Add(b1);
-
-            }
-            //put list in list view
+            string url = Ultility.SERVER_URL + "/Brand/Brand/getAllBrands";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            //using GET - request.Headers.Add ("Authorization","Authorizaation value");
+            request.ContentType = "application/json";
+            HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+            Stream rebut = myResp.GetResponseStream();
+            StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+            string info = readStream.ReadToEnd();
+            allBrand = JsonConvert.DeserializeObject<List<Brand>>(info);
+            
             //FragmentManager fragManager = FragmentManager;
             Fragment fragment = EventListFragment.NewInstance(dadFrag);
             brandListView.Adapter = new BrandListAdapter(this.Activity, allBrand, dadFrag, fragment);

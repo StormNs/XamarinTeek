@@ -7,18 +7,20 @@ using Android.Views;
 using System;
 using Android.Support.V4.App;
 using Android.OS;
+using Android.Graphics;
+using Java.IO;
 using Square.Picasso;
 
 namespace XamarinTeek
 {
-    public class BrandListAdapter: BaseAdapter<Brand>
+    public class BrandListAdapter : BaseAdapter<Brand>
     {
         List<Brand> items;
         Activity context;
         Android.Support.V4.App.FragmentManager fragManager;
         Android.Support.V4.App.Fragment fragment;
 
-        public BrandListAdapter(Activity context, List<Brand> items, 
+        public BrandListAdapter(Activity context, List<Brand> items,
             Android.Support.V4.App.FragmentManager trans, Android.Support.V4.App.Fragment frag) : base()
         {
             this.items = items;
@@ -31,8 +33,7 @@ namespace XamarinTeek
         {
             get
             {
-            return items.Count;
-
+                return items.Count;
             }
         }
 
@@ -44,7 +45,7 @@ namespace XamarinTeek
             }
         }
 
-       
+
         public override long GetItemId(int position)
         {
             return position;
@@ -67,22 +68,24 @@ namespace XamarinTeek
             Picasso.With(context).Load(item.imageUrl).Into(btnImage);
                 
             btnImage.Focusable = true;
+           
 
-            Bundle arguments = new Bundle();
-            arguments.PutString("BrandName", item.name);
-            arguments.PutString("BrandImageUrl", item.imageUrl);
-            fragment.Arguments = arguments;
             btnImage.Click += (sender, args) =>
             {
-               var trans =  fragManager.BeginTransaction();
+                Bundle arguments = new Bundle();
+                arguments.PutInt("BrandId", item.Id);
+                arguments.PutString("BrandName", item.name);
+                arguments.PutString("BrandImageUrl", item.imageUrl);
+                fragment.Arguments = arguments;
+
+                var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
                 trans.Commit();
-
             };
             return convertView;
         }
 
-        
+
     }
 }

@@ -9,19 +9,20 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using XamarinTeek.Object;
 using Square.Picasso;
 
 namespace XamarinTeek
 {
-    class EventListAdapter : BaseAdapter<Event>
+    class EventListAdapter : BaseAdapter<Events>
     {
-        List<Event> items;
+        List<Events> items;
         Activity context;
         Android.Support.V4.App.FragmentManager fragManager;
         Android.Support.V4.App.Fragment fragment;
         EventListAdapterViewHolder holder;
 
-        public EventListAdapter(Activity context, List<Event> listEvent, Android.Support.V4.App.FragmentManager fragManager,
+        public EventListAdapter(Activity context, List<Events> listEvent, Android.Support.V4.App.FragmentManager fragManager,
         Android.Support.V4.App.Fragment fragment)
         {
             this.context = context;
@@ -64,9 +65,15 @@ namespace XamarinTeek
             //arguments.PutString("BrandImageUrl", item.ImageUrl);
             //fragment.Arguments = arguments;
 
-
             holder.getImageButton().Click += (sender, args) =>
             {
+                Bundle arguments = new Bundle();
+                arguments.PutInt("EventId", item.Id);
+                arguments.PutString("EventDesctiption", item.description);
+                arguments.PutString("EventImageUrl", item.imageUrl);
+                arguments.PutInt("EventEntryPoint", item.entryPoint);
+                fragment.Arguments = arguments;
+
                 var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
@@ -75,11 +82,17 @@ namespace XamarinTeek
             };
             holder.getDescription().Click += (sender, args) =>
             {
+                Bundle arguments = new Bundle();
+                arguments.PutInt("EventId", item.Id);
+                arguments.PutString("EventDesctiption", item.description);
+                arguments.PutString("EventImageUrl", item.imageUrl);
+                arguments.PutInt("EventEntryPoint", item.entryPoint);
+                fragment.Arguments = arguments;
+
                 var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
                 trans.Commit();
-
             };
 
 
@@ -95,7 +108,7 @@ namespace XamarinTeek
             }
         }
 
-        public override Event this[int position]
+        public override Events this[int position]
         {
             get
             {
