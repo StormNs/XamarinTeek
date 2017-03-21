@@ -46,8 +46,13 @@
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,8 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionBarDrawerToggle.cs" />
+    <Compile Include="ActivityListAdapter.cs" />
+    <Compile Include="ActivityOptionsFragment.cs" />
     <Compile Include="BaseActivity.cs" />
-    <Compile Include="Brand.cs" />
+    <Compile Include="Object\Activities.cs" />
+    <Compile Include="Object\Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
     <Compile Include="BtnClickListener.cs" />
     <Compile Include="Event.cs" />
@@ -84,6 +92,7 @@
     <Compile Include="BrandOptionsFragment.cs" />
     <Compile Include="EventFragment.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Object\Events.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="JoinEventDialog.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -98,6 +107,7 @@
     <AndroidResource Include="Resources\drawable\brand_icon.png" />
     <AndroidResource Include="Resources\drawable\ic_menu.png" />
     <AndroidResource Include="Resources\drawable\ic_settings.png" />
+    <AndroidResource Include="Resources\layout\ActivityOptions.axml" />
     <AndroidResource Include="Resources\layout\MainLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -131,6 +141,7 @@
     <AndroidResource Include="Resources\layout\EventRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityRowView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
