@@ -19,75 +19,51 @@ namespace XamarinTeek
     
     public class EventFragment : Fragment
     {
-       
+        public static FragmentManager dadFrag;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            
-            
         }
 
-        public static EventFragment NewInstance()
+        public static EventFragment NewInstance(FragmentManager fragM)
         {
             var eventFrag = new EventFragment { Arguments = new Bundle() };
+            dadFrag = fragM;
             return eventFrag;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            //getEventList
-
-            ////string data = "brandId=1"; //replace <value>
-            ////byte[] dataStream = Encoding.UTF8.GetBytes(data);
-            //string url = "http://10.0.2.2:63096/Event/Event/getEventsByBrandId?brandId=1";
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            //request.Method = "GET";
-            //request.ContentType = "application/json";
-            ////request.ContentLength = dataStream.Length;
-            ////Stream newStream = request.GetRequestStream();
-            ////// Send the data.
-            ////newStream.Write(dataStream, 0, dataStream.Length);
-            ////newStream.Close();
-            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
-            //Stream rebut = myResp.GetResponseStream();
-            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
-            //string info = readStream.ReadToEnd();
-            //var EventList = JsonConvert.DeserializeObject<List<Events>>(info);
-
-            //end
-
             this.Activity.Title = "Event Detail";
             View view = inflater.Inflate(Resource.Layout.EventDetail, container, false);
-            var eventImg = Resource.Drawable.logo;
-            var eventDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                + " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
-                + " printer took a galley of type and scrambled it to make a type specimen book. It has survived not"
-                + " only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-                + " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,"
-                + " and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-            var eventPoint = 5;
+
+            // Get event info
+            Bundle bundle = this.Arguments;
+            var eventId = bundle.GetInt("EventId");
+            var eventUrl = bundle.GetString("EventImageUrl");
+            var eventDescription = bundle.GetString("EventDecription");
+            var eventEntryPoint = bundle.GetInt("EventEntryPoint");
+
+            var eventImg = Ultility.GetImageBitmapFromUrl(eventUrl);
 
             ImageView imgEvent = view.FindViewById<ImageView>(Resource.Id.imgEvent);
             //imgEvent.SetBackgroundResource(eventImg);
-            imgEvent.SetImageResource(eventImg);
+            imgEvent.SetImageBitmap(eventImg);
             imgEvent.RequestLayout();
 
             TextView txtDescription = view.FindViewById<TextView>(Resource.Id.txtDescription);
             txtDescription.Text = eventDescription;
-
             
-
             TextView txtPoint = view.FindViewById<TextView>(Resource.Id.txtPoint);
-            txtPoint.Text = "Need " + eventPoint + (eventPoint > 1 ? " point" : " points") + " to join";
-
-
+            txtPoint.Text = "Need " + eventEntryPoint + (eventEntryPoint > 1 ? " point" : " points") + " to join";
+            
             Button btnJoin = view.FindViewById<Button>(Resource.Id.btnJoin);
             btnJoin.Click += delegate
             {
-
+                Fragment fragment = ActivityOptionsFragment.NewInstance(dadFrag);
+                JoinEventDialog dialog = new JoinEventDialog(this.Activity, dadFrag, fragment, bundle);
                 FragmentTransaction trans = FragmentManager.BeginTransaction();
-                JoinEventDialog dialog = new JoinEventDialog();
                 dialog.Show(trans, "JoinDialog");
             };
 

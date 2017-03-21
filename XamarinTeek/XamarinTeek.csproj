@@ -86,7 +86,6 @@
     <Compile Include="Object\Brand.cs" />
     <Compile Include="BrandListAdapter.cs" />
     <Compile Include="BtnClickListener.cs" />
-    <Compile Include="Event.cs" />
     <Compile Include="EventListAdapter.cs" />
     <Compile Include="EventListFragment.cs" />
     <Compile Include="MainLayoutActivity.cs" />

@@ -9,18 +9,19 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using XamarinTeek.Object;
 
 namespace XamarinTeek
 {
-    class EventListAdapter : BaseAdapter<Event>
+    class EventListAdapter : BaseAdapter<Events>
     {
-        List<Event> items;
+        List<Events> items;
         Activity context;
         Android.Support.V4.App.FragmentManager fragManager;
         Android.Support.V4.App.Fragment fragment;
         EventListAdapterViewHolder holder;
 
-        public EventListAdapter(Activity context, List<Event> listEvent, Android.Support.V4.App.FragmentManager fragManager,
+        public EventListAdapter(Activity context, List<Events> listEvent, Android.Support.V4.App.FragmentManager fragManager,
         Android.Support.V4.App.Fragment fragment)
         {
             this.context = context;
@@ -40,7 +41,7 @@ namespace XamarinTeek
         {
             var item = items[position];
 
-            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.ImageUrl);
+            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.imageUrl);
 
             //do this to increase performance
             if (convertView == null)
@@ -56,16 +57,18 @@ namespace XamarinTeek
 
 
             holder.getImageButton().SetImageBitmap(imageBitmap);
-            holder.getDescription().Text = item.Description;
-
-            //Bundle arguments = new Bundle();
-            //arguments.PutString("BrandName", item.Name);
-            //arguments.PutString("BrandImageUrl", item.ImageUrl);
-            //fragment.Arguments = arguments;
-
+            holder.getDescription().Text = item.description;
+            
 
             holder.getImageButton().Click += (sender, args) =>
             {
+                Bundle arguments = new Bundle();
+                arguments.PutInt("EventId", item.Id);
+                arguments.PutString("EventDesctiption", item.description);
+                arguments.PutString("EventImageUrl", item.imageUrl);
+                arguments.PutInt("EventEntryPoint", item.entryPoint);
+                fragment.Arguments = arguments;
+
                 var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
@@ -74,11 +77,17 @@ namespace XamarinTeek
             };
             holder.getDescription().Click += (sender, args) =>
             {
+                Bundle arguments = new Bundle();
+                arguments.PutInt("EventId", item.Id);
+                arguments.PutString("EventDesctiption", item.description);
+                arguments.PutString("EventImageUrl", item.imageUrl);
+                arguments.PutInt("EventEntryPoint", item.entryPoint);
+                fragment.Arguments = arguments;
+
                 var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
                 trans.Commit();
-
             };
 
 
@@ -94,7 +103,7 @@ namespace XamarinTeek
             }
         }
 
-        public override Event this[int position]
+        public override Events this[int position]
         {
             get
             {

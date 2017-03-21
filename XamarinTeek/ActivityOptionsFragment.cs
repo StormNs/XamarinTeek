@@ -18,14 +18,17 @@ namespace XamarinTeek
 {
     public class ActivityOptionsFragment : Fragment
     {
+        public static FragmentManager dadFrag;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
         }
 
-        public static ActivityOptionsFragment NewInstance()
+        public static ActivityOptionsFragment NewInstance(FragmentManager fraM)
         {
             var activityFrag = new ActivityOptionsFragment { Arguments = new Bundle() };
+            dadFrag = fraM;
             return activityFrag;
         }
 
@@ -49,21 +52,6 @@ namespace XamarinTeek
             StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
             string info = readStream.ReadToEnd();
             var ActivityList = JsonConvert.DeserializeObject<List<Activities>>(info);
-
-
-            //join activity
-
-            //string url = "http://10.0.2.2:63096/Activity/Activity/goActivity?accountId=<value>&activityId=<value>";
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            //request.Method = "GET";
-            //request.ContentType = "application/json";
-            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
-            //Stream rebut = myResp.GetResponseStream();
-            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
-            //string info = readStream.ReadToEnd();
-            //var newAccount = JsonConvert.DeserializeObject<Account>(info);
-
-            //end
 
             View view = inflater.Inflate(Resource.Layout.ActivityOptions, container, false);
 

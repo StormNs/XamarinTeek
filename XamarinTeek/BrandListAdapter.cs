@@ -7,17 +7,19 @@ using Android.Views;
 using System;
 using Android.Support.V4.App;
 using Android.OS;
+using Android.Graphics;
+using Java.IO;
 
 namespace XamarinTeek
 {
-    public class BrandListAdapter: BaseAdapter<Brand>
+    public class BrandListAdapter : BaseAdapter<Brand>
     {
         List<Brand> items;
         Activity context;
         Android.Support.V4.App.FragmentManager fragManager;
         Android.Support.V4.App.Fragment fragment;
 
-        public BrandListAdapter(Activity context, List<Brand> items, 
+        public BrandListAdapter(Activity context, List<Brand> items,
             Android.Support.V4.App.FragmentManager trans, Android.Support.V4.App.Fragment frag) : base()
         {
             this.items = items;
@@ -30,8 +32,7 @@ namespace XamarinTeek
         {
             get
             {
-            return items.Count;
-
+                return items.Count;
             }
         }
 
@@ -43,7 +44,7 @@ namespace XamarinTeek
             }
         }
 
-       
+
         public override long GetItemId(int position)
         {
             return position;
@@ -51,35 +52,37 @@ namespace XamarinTeek
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var item = items[position];
+            var item = this[position];
             //set content image here using bitmap read file from url
             var imageBitmap = Ultility.GetImageBitmapFromUrl(item.imageUrl);
 
-            if(convertView == null)
+            if (convertView == null)
             {
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.BrandRowView, null);
             }
 
             convertView.FindViewById<TextView>(Resource.Id.brandName).Text = item.name;
-           var btnImage =  convertView.FindViewById<ImageView>(Resource.Id.btnBrandImage);
-                btnImage.SetImageBitmap(imageBitmap);
+            var btnImage = convertView.FindViewById<ImageView>(Resource.Id.btnBrandImage);
+            btnImage.SetImageBitmap(imageBitmap);
             btnImage.Focusable = true;
+           
 
-            Bundle arguments = new Bundle();
-            arguments.PutString("BrandName", item.name);
-            arguments.PutString("BrandImageUrl", item.imageUrl);
-            fragment.Arguments = arguments;
             btnImage.Click += (sender, args) =>
             {
-               var trans =  fragManager.BeginTransaction();
+                Bundle arguments = new Bundle();
+                arguments.PutInt("BrandId", item.Id);
+                arguments.PutString("BrandName", item.name);
+                arguments.PutString("BrandImageUrl", item.imageUrl);
+                fragment.Arguments = arguments;
+
+                var trans = fragManager.BeginTransaction();
                 trans.Replace(Resource.Id.content_frame, fragment);
                 trans.AddToBackStack(null);
                 trans.Commit();
-
             };
             return convertView;
         }
 
-        
+
     }
 }

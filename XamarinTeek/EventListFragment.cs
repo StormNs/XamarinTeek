@@ -12,13 +12,17 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V4.App;
 using Android.Graphics;
+using Newtonsoft.Json;
+using System.Net;
+using System.IO;
+using XamarinTeek.Object;
 
 namespace XamarinTeek
 {
     public class EventListFragment : Fragment
     {
 
-        private List<Event> listEvent;
+        private List<Events> listEvent;
         private ListView listEventView;
         public static FragmentManager dadFrag;
         public override void OnCreate(Bundle savedInstanceState)
@@ -37,27 +41,29 @@ namespace XamarinTeek
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-            View view = inflater.Inflate(Resource.Layout.EventsList, container, false);
             this.Activity.Title = "Events";
 
-            listEventView = view.FindViewById<ListView>(Resource.Id.eventList);
-
-            listEvent = new List<Event>();
-
-            listEvent.Add(new Event(1, "Discount Half", "http://www.sabiohairandbeauty.co.uk/uploaded_images/images/icons_50percent.png", "This is 50% boys Buy itttttt goooo do it. Just do itt"));
-
             Bundle arguments = Arguments;
+            int brandId = arguments.GetInt("BrandId");
             String desired_string = arguments.GetString("BrandName");
             String imageUrl = arguments.GetString("BrandImageUrl");
             Bitmap image = Ultility.GetImageBitmapFromUrl(imageUrl);
-             view.FindViewById<ImageView>(Resource.Id.eveBrandImage).SetImageBitmap(image); ;
-               
+            View view = inflater.Inflate(Resource.Layout.EventsList, container, false);
+            listEventView = view.FindViewById<ListView>(Resource.Id.eventList);
+            view.FindViewById<ImageView>(Resource.Id.eveBrandImage).SetImageBitmap(image); ;
 
+            string url = Ultility.SERVER_URL + "/Event/Event/getEventsByBrandId?brandId=" + brandId;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.ContentType = "application/json";
+            HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+            Stream rebut = myResp.GetResponseStream();
+            StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+            string info = readStream.ReadToEnd();
+            listEvent = JsonConvert.DeserializeObject<List<Events>>(info);
+            
             //FragmentManager fragManager = FragmentManager;
-            Fragment fragment = EventFragment.NewInstance();
+            Fragment fragment = EventFragment.NewInstance(dadFrag);
             listEventView.Adapter = new EventListAdapter(this.Activity, listEvent, dadFrag, fragment);
             
             return view;
