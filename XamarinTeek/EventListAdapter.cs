@@ -57,8 +57,8 @@ namespace XamarinTeek
             }
 
             //replace load ImageUrl with Picasso
-           Picasso.With(context).Load(item.ImageUrl).Into(holder.getImageButton());
-            holder.getDescription().Text = item.Description;
+           Picasso.With(context).Load(item.imageUrl).Into(holder.getImageButton());
+            holder.getDescription().Text = item.description;
 
             //Bundle arguments = new Bundle();
             //arguments.PutString("BrandName", item.Name);
