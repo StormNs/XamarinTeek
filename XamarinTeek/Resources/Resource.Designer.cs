@@ -1966,14 +1966,14 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f060088
 			public const int btnLogin = 2131099784;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int btnRegister = 2131099811;
+			// aapt resource value: 0x7f0600a4
+			public const int btnRegister = 2131099812;
+			
+			// aapt resource value: 0x7f060083
+			public const int btnSendCode = 2131099779;
 			
 			// aapt resource value: 0x7f060089
 			public const int btnSignUp = 2131099785;
-			
-			// aapt resource value: 0x7f060083
-			public const int button1 = 2131099779;
 			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
@@ -2044,17 +2044,17 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f06008d
 			public const int drawer_layout = 2131099789;
 			
-			// aapt resource value: 0x7f060082
-			public const int editText1 = 2131099778;
-			
 			// aapt resource value: 0x7f0600a0
-			public const int editText2 = 2131099808;
+			public const int editText1 = 2131099808;
 			
 			// aapt resource value: 0x7f0600a1
-			public const int editText3 = 2131099809;
+			public const int editText2 = 2131099809;
 			
 			// aapt resource value: 0x7f0600a2
-			public const int editText4 = 2131099810;
+			public const int editText3 = 2131099810;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int editText4 = 2131099811;
 			
 			// aapt resource value: 0x7f06005c
 			public const int edit_query = 2131099740;
@@ -2167,14 +2167,14 @@ namespace XamarinTeek
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int my_toolbar = 2131099812;
-			
 			// aapt resource value: 0x7f0600a5
-			public const int nav_brand = 2131099813;
+			public const int my_toolbar = 2131099813;
 			
 			// aapt resource value: 0x7f0600a6
-			public const int nav_setting = 2131099814;
+			public const int nav_brand = 2131099814;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int nav_setting = 2131099815;
 			
 			// aapt resource value: 0x7f060091
 			public const int nav_view = 2131099793;
@@ -2349,6 +2349,9 @@ namespace XamarinTeek
 			
 			// aapt resource value: 0x7f06006c
 			public const int txtActivtyDescription = 2131099756;
+			
+			// aapt resource value: 0x7f060082
+			public const int txtCode = 2131099778;
 			
 			// aapt resource value: 0x7f06007b
 			public const int txtDescription = 2131099771;

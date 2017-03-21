@@ -9,6 +9,8 @@ namespace XamarinTeek
 {
     public class Ultility
     {
+        public static string SERVER_URL = "http://10.0.2.2:63096";
+
         public static Bitmap GetImageBitmapFromUrl(string url)
         {
             Bitmap imageBitmap = null;

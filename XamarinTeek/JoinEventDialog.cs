@@ -21,6 +21,15 @@ namespace XamarinTeek.Resources
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.JoinEvent, container, false);
+
+            TextView txtCode = view.FindViewById<TextView>(Resource.Id.txtCode);
+
+            Button btnSendCode = view.FindViewById<Button>(Resource.Id.btnSendCode);
+            btnSendCode.Click += delegate {
+
+            };
+
+
             return view;
         }
     }
