@@ -90,7 +90,7 @@ namespace XamarinTeek
         //int oldPosition = -1;
         private void ListItemClicked(int position)
         {
-
+            Android.Support.V4.App.FragmentManager dadFragManager = SupportFragmentManager;
             //this way we don't load twice, but you might want to modify this a bit.
             //if (position == oldPosition)
             //    return;
@@ -99,7 +99,7 @@ namespace XamarinTeek
             switch (position)
             {
                 case 0:
-                    fragment = BrandOptionsFragment.NewInstance();
+                    fragment = BrandOptionsFragment.NewInstance(dadFragManager);
                     break;
                 //case 1:
                     //fragment = EventFragment.NewInstance();
@@ -107,8 +107,10 @@ namespace XamarinTeek
             }
 
 
-            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.content_frame, fragment)
-                .Commit();
+            var trans = dadFragManager.BeginTransaction();
+               trans.Replace(Resource.Id.content_frame, fragment);
+            trans.AddToBackStack(null);
+            trans.Commit();
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -122,6 +124,19 @@ namespace XamarinTeek
             return base.OnOptionsItemSelected(item);
         }
 
+
+        public override void OnBackPressed()
+        {
+            if (SupportFragmentManager.BackStackEntryCount > 1)
+            {
+                SupportFragmentManager.PopBackStackImmediate();
+            }
+            else
+            {
+                var intent = new Intent(this, typeof(MainActivity));
+                StartActivity(intent);
+            }
+        }
 
     }
 }

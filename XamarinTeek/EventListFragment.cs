@@ -20,6 +20,7 @@ namespace XamarinTeek
 
         private List<Event> listEvent;
         private ListView listEventView;
+        public static FragmentManager dadFrag;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,9 +28,10 @@ namespace XamarinTeek
             // Create your fragment here
         }
 
-        public static EventListFragment NewInstance()
+        public static EventListFragment NewInstance(FragmentManager fraM)
         {
             var eventListFrag = new EventListFragment { Arguments = new Bundle() };
+            dadFrag = fraM;
             return eventListFrag;
         }
 
@@ -39,6 +41,7 @@ namespace XamarinTeek
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
             View view = inflater.Inflate(Resource.Layout.EventsList, container, false);
+            this.Activity.Title = "Events";
 
             listEventView = view.FindViewById<ListView>(Resource.Id.eventList);
 
@@ -53,9 +56,9 @@ namespace XamarinTeek
              view.FindViewById<ImageView>(Resource.Id.eveBrandImage).SetImageBitmap(image); ;
                
 
-            FragmentManager fragManager = FragmentManager;
+            //FragmentManager fragManager = FragmentManager;
             Fragment fragment = EventFragment.NewInstance();
-            listEventView.Adapter = new EventListAdapter(this.Activity, listEvent, fragManager, fragment);
+            listEventView.Adapter = new EventListAdapter(this.Activity, listEvent, dadFrag, fragment);
             
             return view;
         }

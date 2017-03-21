@@ -71,8 +71,10 @@ namespace XamarinTeek
             fragment.Arguments = arguments;
             btnImage.Click += (sender, args) =>
             {
-                fragManager.BeginTransaction().Replace(Resource.Id.content_frame, fragment)
-                .Commit();
+               var trans =  fragManager.BeginTransaction();
+                trans.Replace(Resource.Id.content_frame, fragment);
+                trans.AddToBackStack(null);
+                trans.Commit();
 
             };
             return convertView;
@@ -80,5 +82,4 @@ namespace XamarinTeek
 
         
     }
-
 }
