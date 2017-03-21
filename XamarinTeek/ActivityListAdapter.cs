@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using XamarinTeek.Object;
+using Square.Picasso;
 
 namespace XamarinTeek
 {
@@ -55,8 +56,10 @@ namespace XamarinTeek
             }
 
             ImageView imgActivity = convertView.FindViewById<ImageView>(Resource.Id.imgActivity);
-            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.imageUrl);
-            imgActivity.SetImageBitmap(imageBitmap);
+
+            //replace load imageFromUrl with Picasso
+            Picasso.With(context).Load(item.imageUrl).Into(imgActivity);
+            
 
             TextView txtDescription = convertView.FindViewById<TextView>(Resource.Id.txtActivtyDescription);
             txtDescription.Text = item.name;

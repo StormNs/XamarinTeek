@@ -27,7 +27,7 @@ namespace XamarinTeek
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-          
+
 
 
             // Create your fragment here
@@ -35,7 +35,7 @@ namespace XamarinTeek
 
         public static BrandOptionsFragment NewInstance(FragmentManager fraM)
         {
-            var brandFrag = new BrandOptionsFragment { Arguments = new Bundle()};
+            var brandFrag = new BrandOptionsFragment { Arguments = new Bundle() };
             dadFrag = fraM;
             return brandFrag;
         }
@@ -44,13 +44,13 @@ namespace XamarinTeek
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            
+
 
             //base.OnCreateView(inflater, container, savedInstanceState);
 
 
             this.Activity.Title = "Brands";
-            View view =  inflater.Inflate(Resource.Layout.BrandOptions, container, false);
+            View view = inflater.Inflate(Resource.Layout.BrandOptions, container, false);
 
             brandListView = view.FindViewById<ListView>(Resource.Id.brandListView);
             //string url = "http://10.0.2.2:63096/Brand/Brand/getAllBrands";
@@ -65,9 +65,13 @@ namespace XamarinTeek
             //var BrandList = JsonConvert.DeserializeObject<List<Brand>>(info);
 
             ////new data service and get all brand here..
-            Brand b1 = new Brand(1,"Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
             allBrand = new List<Brand>();
-            allBrand.Add(b1);
+            for (int i = 0; i < 17; i++)
+            {
+                Brand b1 = new Brand(1, "Passio", "http://www.vietcv.net/wp-content/uploads/2016/08/4fb04b7765e4.jpg");
+                allBrand.Add(b1);
+
+            }
             //put list in list view
             //FragmentManager fragManager = FragmentManager;
             Fragment fragment = EventListFragment.NewInstance(dadFrag);

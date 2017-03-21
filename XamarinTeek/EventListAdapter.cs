@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Square.Picasso;
 
 namespace XamarinTeek
 {
@@ -40,7 +41,7 @@ namespace XamarinTeek
         {
             var item = items[position];
 
-            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.ImageUrl);
+           
 
             //do this to increase performance
             if (convertView == null)
@@ -54,8 +55,8 @@ namespace XamarinTeek
                 holder = convertView.Tag as EventListAdapterViewHolder;
             }
 
-
-            holder.getImageButton().SetImageBitmap(imageBitmap);
+            //replace load ImageUrl with Picasso
+           Picasso.With(context).Load(item.ImageUrl).Into(holder.getImageButton());
             holder.getDescription().Text = item.Description;
 
             //Bundle arguments = new Bundle();

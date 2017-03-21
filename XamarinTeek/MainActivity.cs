@@ -24,17 +24,18 @@ namespace XamarinTeek
 
             SetContentView(Resource.Layout.Main);
 
-            //Check account
+            string user = "Edme";
+            string pass = "zaQ@123";
+            string url = "http://10.0.2.2:63096/Account/Account/getAccountByUsernameAndPassword?username=" + user + "&password=" + pass + "";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.ContentType = "application/json";
+            HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+            Stream rebut = myResp.GetResponseStream();
+            StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+            string info = readStream.ReadToEnd();
+            var validate = JsonConvert.DeserializeObject<Boolean>(info);
 
-            //string url = "http://10.0.2.2:63096/Account/Account/getAccountByUsernameAndPassword?username=<value>&password=<value>";
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            //request.Method = "GET";
-            //request.ContentType = "application/json";
-            //HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
-            //Stream rebut = myResp.GetResponseStream();
-            //StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
-            //string info = readStream.ReadToEnd();
-            //var validate = JsonConvert.DeserializeObject<Boolean>(info);
 
             //Signup
 
@@ -52,6 +53,7 @@ namespace XamarinTeek
             Button btnLogin = FindViewById<Button>(Resource.Id.btnLogin);
             btnLogin.Click += delegate
             {
+                //if(CheckLogIn())
                 StartActivity(typeof(MainLayoutActivity));
 
             };
@@ -68,6 +70,28 @@ namespace XamarinTeek
         public override void OnBackPressed()
         {
             base.OnBackPressed();
+        }
+
+
+        public bool CheckLogIn()
+        {
+            bool validate = false;
+            //Check account
+            string user = FindViewById<EditText>(Resource.Id.edtUsername).Text;
+            string pass = FindViewById<EditText>(Resource.Id.edtPassword).Text;
+            if(user.Length > 0 && pass.Length > 0)
+            {
+                string url = "http://10.0.2.2:63096/Account/Account/getAccountByUsernameAndPassword?username=" + user + "&password=" + pass + "";
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+                request.ContentType = "application/json";
+                HttpWebResponse myResp = (HttpWebResponse)request.GetResponse();
+                Stream rebut = myResp.GetResponseStream();
+                StreamReader readStream = new StreamReader(rebut, Encoding.UTF8); // Pipes the stream to a higher level stream reader with the required encoding format. 
+                string info = readStream.ReadToEnd();
+                validate = JsonConvert.DeserializeObject<Boolean>(info);
+            }
+            return validate;
         }
 
     }

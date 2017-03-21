@@ -7,6 +7,7 @@ using Android.Views;
 using System;
 using Android.Support.V4.App;
 using Android.OS;
+using Square.Picasso;
 
 namespace XamarinTeek
 {
@@ -52,17 +53,19 @@ namespace XamarinTeek
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var item = items[position];
-            //set content image here using bitmap read file from url
-            var imageBitmap = Ultility.GetImageBitmapFromUrl(item.imageUrl);
-
+           
+            
             if(convertView == null)
             {
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.BrandRowView, null);
             }
 
             convertView.FindViewById<TextView>(Resource.Id.brandName).Text = item.name;
-           var btnImage =  convertView.FindViewById<ImageView>(Resource.Id.btnBrandImage);
-                btnImage.SetImageBitmap(imageBitmap);
+           var btnImage =  convertView.FindViewById<ImageButton>(Resource.Id.btnBrandImage);
+
+            //replace loadImageUrl with Picasso
+            Picasso.With(context).Load(item.imageUrl).Into(btnImage);
+                
             btnImage.Focusable = true;
 
             Bundle arguments = new Bundle();
