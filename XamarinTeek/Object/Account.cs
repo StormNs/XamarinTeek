@@ -29,5 +29,7 @@ namespace XamarinTeek.Object
         public String username { get; set; }
         public String imageUrl { get; set; }
         public int point { get; set; }
+        public bool success { get; set; }
+        public string message { get; set; }
     }
 }
